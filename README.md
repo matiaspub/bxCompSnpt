@@ -13,9 +13,15 @@ Window -> Preferences -> PHP -> Editor -> Templates -> Import(кнопка), в�
 
 
 ### phpStorm:
-Win: Скопировать файл stormSnippets.xml в папку C:\Users\[username]\.WebIde60\config\templates
+Скопировать файл stormSnippets.xml в папку
 
-___В *nix и MacOS где настройки пользователя находятся незнаю. Помогите исправиться.___
+___Windows:___  \<User home\>\\.WebIdeXX\config\templates
+
+<sup><User home> в WindowsXP это C:\Documents and Settings\<User name>\; в Windows Vista она C:\Users\<User name>\</sup>
+
+___Linux:___  ~/.WebIdeXX/config/templates that contains user-specific settings.
+
+___Mac OS:___  ~/Library/Preferences/WebIdeXX/templates
 
 
 ## Вид
