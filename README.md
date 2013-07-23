@@ -25,7 +25,8 @@ ___Mac OS:___  ~/Library/Preferences/WebIdeXX/templates
 
 
 ## Вид
-<img src="http://clip2net.com/clip/m31506/1369378577-clip-24kb.png" alt="Bitrix Components Snippets in Action"/>
+<img src="http://clip2net.com/clip/m31506/1374561332-clip-28kb.png" alt="Bitrix Components Snippets: List"/>
+<img src="http://clip2net.com/clip/m31506/1374561651-clip-26kb.png" alt="Bitrix Components Snippets: Placeholders"/>
 
 
 ### P.S.:
