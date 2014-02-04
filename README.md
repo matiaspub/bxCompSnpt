@@ -24,11 +24,6 @@ ___Linux:___  ~/.WebIdeXX/config/templates that contains user-specific settings.
 ___Mac OS:___  ~/Library/Preferences/WebIdeXX/templates
 
 
-## Вид
-<img src="http://clip2net.com/clip/m31506/1374561332-clip-28kb.png" alt="Bitrix Components Snippets: List"/>
-<img src="http://clip2net.com/clip/m31506/1374561651-clip-26kb.png" alt="Bitrix Components Snippets: Placeholders"/>
-
-
 ### P.S.:
 Предложения как улучшить сниппеты для Eclipse писать в [Issues](https://github.com/matiaspub/bxCompSnpt/issues) с примером, а лучше с экспортированным шаблоном одного сниппета.
 
