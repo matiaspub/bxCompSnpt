@@ -169,8 +169,8 @@
         &#10;&#9;&#9;&quot;DELIVERY_NO_SESSION&quot;            =&gt;  &quot;$DELIVERY_NO_SESSION$&quot;,            // Проверять сессию при оформлении заказа 
         &#10;&#9;&#9;&quot;TEMPLATE_LOCATION&quot;              =&gt;  &quot;$TEMPLATE_LOCATION$&quot;,     // Шаблон местоположения : array ( '.default' =&gt; 'По-умолчанию', 'popup' =&gt; 'Строка поиска', )
         &#10;&#9;&#9;&quot;DELIVERY_TO_PAYSYSTEM&quot;          =&gt;  &quot;$DELIVERY_TO_PAYSYSTEM$&quot;,             // Зависимость : array ( 'd2p' =&gt; 'Доставка от оплаты', 'p2d' =&gt; 'Оплата от доставки', )
-        &#10;&#9;&#9;&quot;PROP_1&quot;                         =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика "Физическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
-        &#10;&#9;&#9;&quot;PROP_2&quot;                         =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика "Юридическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_1&quot;                         =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика 'Физическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_2&quot;                         =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика 'Юридическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Дополнительные настройки
         &#10;&#9;&#9;&quot;PATH_TO_BASKET&quot;                 =&gt;  &quot;$PATH_TO_BASKET$&quot;,   // Страница корзины 
@@ -229,7 +229,7 @@
 
     <template
         name="bitrix:news"
-        description="Новости     [Информационные блоки]&#10;&#10;Новостной раздел"
+        description="- Новости     [Информационные блоки]&#10;&#10;Новостной раздел"
         toReformat="false"
         toShortenFQNames="true"
         value="// Новости&#10;$$APPLICATION-&gt;IncludeComponent(&#10;&#9;&quot;bitrix:news&quot;,&#10;&#9;&quot;$template$&quot;,                            // [.default, web20]&#10;&#9;array(        &#10;&#9;&#9;// region Основные параметры
@@ -312,7 +312,7 @@
         &#10;&#9;&#9;&quot;DETAIL_DISPLAY_BOTTOM_PAGER&quot;      =&gt;  &quot;$DETAIL_DISPLAY_BOTTOM_PAGER$&quot;,              // Выводить под списком 
         &#10;&#9;&#9;&quot;DETAIL_PAGER_TITLE&quot;               =&gt;  &quot;$DETAIL_PAGER_TITLE$&quot;,       // Название категорий 
         &#10;&#9;&#9;&quot;DETAIL_PAGER_TEMPLATE&quot;            =&gt;  &quot;$DETAIL_PAGER_TEMPLATE$&quot;,               // Название шаблона 
-        &#10;&#9;&#9;&quot;DETAIL_PAGER_SHOW_ALL&quot;            =&gt;  &quot;$DETAIL_PAGER_SHOW_ALL$&quot;,              // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;DETAIL_PAGER_SHOW_ALL&quot;            =&gt;  &quot;$DETAIL_PAGER_SHOW_ALL$&quot;,              // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Настройки постраничной навигации
         &#10;&#9;&#9;&quot;PAGER_TEMPLATE&quot;                   =&gt;  &quot;$PAGER_TEMPLATE$&quot;,       // Шаблон постраничной навигации : array ( '.default' =&gt; '.default (Встроенный шаблон)', 'arrows_adm' =&gt; 'arrows_adm (Встроенный шаблон)', 'modern' =&gt; 'modern (Встроенный шаблон)', 'orange' =&gt; 'orange (Встроенный шаблон)', 'visual' =&gt; 'visual (Встроенный шаблон)', 'blog' =&gt; 'blog (Общий шаблон)', 'forum' =&gt; 'forum (Общий шаблон)', 'arrows' =&gt; 'arrows (Новый адаптивный шаблон интернет-магазина)', )
@@ -322,7 +322,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,              // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,              // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,          // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,              // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,              // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -455,7 +455,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                 // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                 // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,             // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                 // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                 // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -561,7 +561,7 @@
         &#10;&#9;&#9;&quot;DISPLAY_TOP_PAGER&quot;          =&gt;  &quot;$DISPLAY_TOP_PAGER$&quot;,                         // Выводить над списком 
         &#10;&#9;&#9;&quot;DISPLAY_BOTTOM_PAGER&quot;       =&gt;  &quot;$DISPLAY_BOTTOM_PAGER$&quot;,                         // Выводить под списком 
         &#10;&#9;&#9;&quot;PAGER_TITLE&quot;                =&gt;  &quot;$PAGER_TITLE$&quot;,                  // Название категорий 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;             =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                         // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;             =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                         // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -874,7 +874,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                           // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                           // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,                       // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                           // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                           // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -1062,7 +1062,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                         // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                         // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,                     // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                         // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                         // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -1125,8 +1125,8 @@
         &#10;&#9;&#9;&quot;ELEMENT_CODE&quot;            =&gt;  &quot;$ELEMENT_CODE$&quot;,                          // Код элемента 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Источник данных
-        &#10;&#9;&#9;&quot;ELEMENT_SORT_FIELD&quot;      =&gt;  &quot;$ELEMENT_SORT_FIELD$&quot;,                      // По какому полю отсортировать фотографии для ссылок "след." и "пред." : array ( 'shows' =&gt; 'количество просмотров в среднем', 'sort' =&gt; 'индекс сортировки', 'timestamp_x' =&gt; 'дата изменения', 'name' =&gt; 'название', 'id' =&gt; 'ID', 'active_from' =&gt; 'дата активности (с)', 'active_to' =&gt; 'дата активности (по)', )
-        &#10;&#9;&#9;&quot;ELEMENT_SORT_ORDER&quot;      =&gt;  &quot;$ELEMENT_SORT_ORDER$&quot;,                       // В каком порядке отсортировать фотографии для ссылок "след." и "пред." : array ( 'asc' =&gt; 'по возрастанию', 'desc' =&gt; 'по убыванию', )
+        &#10;&#9;&#9;&quot;ELEMENT_SORT_FIELD&quot;      =&gt;  &quot;$ELEMENT_SORT_FIELD$&quot;,                      // По какому полю отсортировать фотографии для ссылок 'след.' и 'пред.' : array ( 'shows' =&gt; 'количество просмотров в среднем', 'sort' =&gt; 'индекс сортировки', 'timestamp_x' =&gt; 'дата изменения', 'name' =&gt; 'название', 'id' =&gt; 'ID', 'active_from' =&gt; 'дата активности (с)', 'active_to' =&gt; 'дата активности (по)', )
+        &#10;&#9;&#9;&quot;ELEMENT_SORT_ORDER&quot;      =&gt;  &quot;$ELEMENT_SORT_ORDER$&quot;,                       // В каком порядке отсортировать фотографии для ссылок 'след.' и 'пред.' : array ( 'asc' =&gt; 'по возрастанию', 'desc' =&gt; 'по убыванию', )
         &#10;&#9;&#9;&quot;FIELD_CODE&quot;              =&gt;  array($FIELD_CODE$),                   // Поля : array ( 'ID' =&gt; 'ID', 'CODE' =&gt; 'Символьный код', 'XML_ID' =&gt; 'Внешний код', 'NAME' =&gt; 'Название', 'TAGS' =&gt; 'Теги', 'SORT' =&gt; 'Сортировка', 'PREVIEW_TEXT' =&gt; 'Описание для анонса', 'PREVIEW_PICTURE' =&gt; 'Картинка для анонса', 'DETAIL_TEXT' =&gt; 'Детальное описание', 'DETAIL_PICTURE' =&gt; 'Детальная картинка', 'DATE_ACTIVE_FROM' =&gt; 'Начало активности (дата)', 'ACTIVE_FROM' =&gt; 'Начало активности (время)', 'DATE_ACTIVE_TO' =&gt; 'Окончание активности (дата)', 'ACTIVE_TO' =&gt; 'Окончание активности (время)', 'SHOW_COUNTER' =&gt; 'Количество показов', 'SHOW_COUNTER_START' =&gt; 'Дата первого показа', 'IBLOCK_TYPE_ID' =&gt; 'Тип информационного блока', 'IBLOCK_ID' =&gt; 'ID информационного блока', 'IBLOCK_CODE' =&gt; 'Символьный код информационного блока', 'IBLOCK_NAME' =&gt; 'Название информационного блока', 'IBLOCK_EXTERNAL_ID' =&gt; 'Внешний код информационного блока', 'DATE_CREATE' =&gt; 'Дата создания', 'CREATED_BY' =&gt; 'Кем создан (ID)', 'CREATED_USER_NAME' =&gt; 'Кем создан (имя)', 'TIMESTAMP_X' =&gt; 'Дата изменения', 'MODIFIED_BY' =&gt; 'Кем изменен (ID)', 'USER_NAME' =&gt; 'Кем изменен (имя)', )
         &#10;&#9;&#9;&quot;PROPERTY_CODE&quot;           =&gt;  array($PROPERTY_CODE$),                   // Свойства 
         &#10;&#9;&#9;// endregion
@@ -2540,7 +2540,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                         // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                         // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,                     // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                         // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                         // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -2728,10 +2728,10 @@
         &#10;&#9;&#9;&quot;LINK_ELEMENTS_URL&quot;                 =&gt;  &quot;$LINK_ELEMENTS_URL$&quot;,  // URL на страницу, где будет показан список связанных элементов 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Настройки блока С этим товаром покупают
-        &#10;&#9;&#9;&quot;USE_ALSO_BUY&quot;                      =&gt;  &quot;$USE_ALSO_BUY$&quot;,                                        // Показывать блок "С этим товаром покупают" 
+        &#10;&#9;&#9;&quot;USE_ALSO_BUY&quot;                      =&gt;  &quot;$USE_ALSO_BUY$&quot;,                                        // Показывать блок 'С этим товаром покупают' 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Настройки блока Количество товара на складе
-        &#10;&#9;&#9;&quot;USE_STORE&quot;                         =&gt;  &quot;$USE_STORE$&quot;,                                        // Показывать блок "Количество товара на складе" 
+        &#10;&#9;&#9;&quot;USE_STORE&quot;                         =&gt;  &quot;$USE_STORE$&quot;,                                        // Показывать блок 'Количество товара на складе' 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Настройки постраничной навигации
         &#10;&#9;&#9;&quot;PAGER_TEMPLATE&quot;                    =&gt;  &quot;$PAGER_TEMPLATE$&quot;,                                 // Шаблон постраничной навигации : array ( '.default' =&gt; '.default (Встроенный шаблон)', 'arrows_adm' =&gt; 'arrows_adm (Встроенный шаблон)', 'modern' =&gt; 'modern (Встроенный шаблон)', 'orange' =&gt; 'orange (Встроенный шаблон)', 'visual' =&gt; 'visual (Встроенный шаблон)', 'blog' =&gt; 'blog (Общий шаблон)', 'forum' =&gt; 'forum (Общий шаблон)', 'arrows' =&gt; 'arrows (Новый адаптивный шаблон интернет-магазина)', )
@@ -2741,7 +2741,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                 =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                                        // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;              =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                                        // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;   =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,                                    // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                    =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                                        // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                    =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                                        // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -2907,7 +2907,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                     // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                     // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,                 // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                     // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                     // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -3797,7 +3797,7 @@
         &#10;&#9;&#9;&quot;PAGER_SHOW_ALWAYS&quot;                =&gt;  &quot;$PAGER_SHOW_ALWAYS$&quot;,                                // Выводить всегда 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING&quot;             =&gt;  &quot;$PAGER_DESC_NUMBERING$&quot;,                                // Использовать обратную навигацию 
         &#10;&#9;&#9;&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot;  =&gt;  &quot;$PAGER_DESC_NUMBERING_CACHE_TIME$&quot;,                            // Время кеширования страниц для обратной навигации 
-        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                                // Показывать ссылку "Все" 
+        &#10;&#9;&#9;&quot;PAGER_SHOW_ALL&quot;                   =&gt;  &quot;$PAGER_SHOW_ALL$&quot;,                                // Показывать ссылку 'Все' 
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -5008,8 +5008,8 @@
         &#10;&#9;&#9;&quot;CACHE_NOTES&quot;       =&gt;  &quot;$CACHE_NOTES$&quot;,       //  
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Дополнительные настройки
-        &#10;&#9;&#9;&quot;arrCURRENCY_FROM&quot;  =&gt;  array($arrCURRENCY_FROM$),  // Массив "исходных" валют для перевода : array ( 'RUB' =&gt; '[RUB] Рубль', 'USD' =&gt; '[USD] Доллар США', 'EUR' =&gt; '[EUR] Евро', 'UAH' =&gt; '[UAH] Гривна', )
-        &#10;&#9;&#9;&quot;CURRENCY_BASE&quot;     =&gt;  &quot;$CURRENCY_BASE$&quot;,       // Валюта, к которой приводятся "исходные" валюты : array ( 'RUB' =&gt; '[RUB] Рубль', 'USD' =&gt; '[USD] Доллар США', 'EUR' =&gt; '[EUR] Евро', 'UAH' =&gt; '[UAH] Гривна', )
+        &#10;&#9;&#9;&quot;arrCURRENCY_FROM&quot;  =&gt;  array($arrCURRENCY_FROM$),  // Массив 'исходных' валют для перевода : array ( 'RUB' =&gt; '[RUB] Рубль', 'USD' =&gt; '[USD] Доллар США', 'EUR' =&gt; '[EUR] Евро', 'UAH' =&gt; '[UAH] Гривна', )
+        &#10;&#9;&#9;&quot;CURRENCY_BASE&quot;     =&gt;  &quot;$CURRENCY_BASE$&quot;,       // Валюта, к которой приводятся 'исходные' валюты : array ( 'RUB' =&gt; '[RUB] Рубль', 'USD' =&gt; '[USD] Доллар США', 'EUR' =&gt; '[EUR] Евро', 'UAH' =&gt; '[UAH] Гривна', )
         &#10;&#9;&#9;&quot;RATE_DAY&quot;          =&gt;  &quot;$RATE_DAY$&quot;,       // День, на который показывать курсы валют (в формате 'Y-m-d') 
         &#10;&#9;&#9;&quot;SHOW_CB&quot;           =&gt;  &quot;$SHOW_CB$&quot;,      // Показывать курс валют с ЦБ РФ 
         &#10;&#9;&#9;// endregion
@@ -7783,7 +7783,7 @@
         &#10;&#9;&#9;&quot;IBLOCK_ID&quot;                  =&gt;  &quot;$IBLOCK_ID$&quot;,  // Информационный блок : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )
         &#10;&#9;&#9;&quot;PROPERTY_FIELD_TYPE&quot;        =&gt;  &quot;$PROPERTY_FIELD_TYPE$&quot;,                  // Свойство, в котором хранится тип вопроса 
         &#10;&#9;&#9;&quot;PROPERTY_FIELD_VALUES&quot;      =&gt;  &quot;$PROPERTY_FIELD_VALUES$&quot;,                  // Множественное свойство, в котором хранятся значения выпадающего списка 
-        &#10;&#9;&#9;&quot;BACK_URL&quot;                   =&gt;  &quot;$BACK_URL$&quot;,   // Страница, с которой пришли на мастер (для кнопки "Назад", может быть пустое) 
+        &#10;&#9;&#9;&quot;BACK_URL&quot;                   =&gt;  &quot;$BACK_URL$&quot;,   // Страница, с которой пришли на мастер (для кнопки 'Назад', может быть пустое) 
         &#10;&#9;&#9;&quot;NEXT_URL&quot;                   =&gt;  &quot;$NEXT_URL$&quot;,   // Страница с формой редактирования сообщения 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Управление режимом AJAX
@@ -9989,8 +9989,8 @@
         &#10;&#9;&#9;&quot;SEARCH_TAGS_PERIOD&quot;                            =&gt;  &quot;$SEARCH_TAGS_PERIOD$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                // Период выборки тегов (дней) 
         &#10;&#9;&#9;&quot;SEARCH_TAGS_FONT_MAX&quot;                          =&gt;  &quot;$SEARCH_TAGS_FONT_MAX$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // Максимальный размер шрифта (px) 
         &#10;&#9;&#9;&quot;SEARCH_TAGS_FONT_MIN&quot;                          =&gt;  &quot;$SEARCH_TAGS_FONT_MIN$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // Минимальный размер шрифта (px) 
-        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_NEW&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_NEW$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более позднего тега (пример: "C0C0C0") 
-        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_OLD&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_OLD$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более раннего тега (пример: "FEFEFE") 
+        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_NEW&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_NEW$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более позднего тега (пример: 'C0C0C0') 
+        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_OLD&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_OLD$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более раннего тега (пример: 'FEFEFE') 
         &#10;&#9;&#9;&quot;SEARCH_FILTER_NAME&quot;                            =&gt;  &quot;$SEARCH_FILTER_NAME$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             // Имя дополнительного фильтра по функционалу 
         &#10;&#9;&#9;&quot;SEARCH_FILTER_DATE_NAME&quot;                       =&gt;  &quot;$SEARCH_FILTER_DATE_NAME$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        // Имя дополнительного фильтра по дате 
         &#10;&#9;&#9;// endregion
@@ -10337,8 +10337,8 @@
         &#10;&#9;&#9;&quot;SEARCH_TAGS_PERIOD&quot;                        =&gt;  &quot;$SEARCH_TAGS_PERIOD$&quot;,                                                                 // Период выборки тегов (дней) 
         &#10;&#9;&#9;&quot;SEARCH_TAGS_FONT_MAX&quot;                      =&gt;  &quot;$SEARCH_TAGS_FONT_MAX$&quot;,                                                               // Максимальный размер шрифта (px) 
         &#10;&#9;&#9;&quot;SEARCH_TAGS_FONT_MIN&quot;                      =&gt;  &quot;$SEARCH_TAGS_FONT_MIN$&quot;,                                                               // Минимальный размер шрифта (px) 
-        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_NEW&quot;                     =&gt;  &quot;$SEARCH_TAGS_COLOR_NEW$&quot;,                                                           // Цвет более позднего тега (пример: "C0C0C0") 
-        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_OLD&quot;                     =&gt;  &quot;$SEARCH_TAGS_COLOR_OLD$&quot;,                                                           // Цвет более раннего тега (пример: "FEFEFE") 
+        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_NEW&quot;                     =&gt;  &quot;$SEARCH_TAGS_COLOR_NEW$&quot;,                                                           // Цвет более позднего тега (пример: 'C0C0C0') 
+        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_OLD&quot;                     =&gt;  &quot;$SEARCH_TAGS_COLOR_OLD$&quot;,                                                           // Цвет более раннего тега (пример: 'FEFEFE') 
         &#10;&#9;&#9;&quot;SEARCH_FILTER_NAME&quot;                        =&gt;  &quot;$SEARCH_FILTER_NAME$&quot;,                                              // Имя дополнительного фильтра по функционалу 
         &#10;&#9;&#9;&quot;SEARCH_FILTER_DATE_NAME&quot;                   =&gt;  &quot;$SEARCH_FILTER_DATE_NAME$&quot;,                                         // Имя дополнительного фильтра по дате 
         &#10;&#9;&#9;// endregion
@@ -10657,8 +10657,8 @@
         &#10;&#9;&#9;&quot;SEARCH_TAGS_PERIOD&quot;                            =&gt;  &quot;$SEARCH_TAGS_PERIOD$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                // Период выборки тегов (дней) 
         &#10;&#9;&#9;&quot;SEARCH_TAGS_FONT_MAX&quot;                          =&gt;  &quot;$SEARCH_TAGS_FONT_MAX$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // Максимальный размер шрифта (px) 
         &#10;&#9;&#9;&quot;SEARCH_TAGS_FONT_MIN&quot;                          =&gt;  &quot;$SEARCH_TAGS_FONT_MIN$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // Минимальный размер шрифта (px) 
-        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_NEW&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_NEW$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более позднего тега (пример: "C0C0C0") 
-        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_OLD&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_OLD$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более раннего тега (пример: "FEFEFE") 
+        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_NEW&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_NEW$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более позднего тега (пример: 'C0C0C0') 
+        &#10;&#9;&#9;&quot;SEARCH_TAGS_COLOR_OLD&quot;                         =&gt;  &quot;$SEARCH_TAGS_COLOR_OLD$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Цвет более раннего тега (пример: 'FEFEFE') 
         &#10;&#9;&#9;&quot;SEARCH_FILTER_NAME&quot;                            =&gt;  &quot;$SEARCH_FILTER_NAME$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             // Имя дополнительного фильтра по функционалу 
         &#10;&#9;&#9;&quot;SEARCH_FILTER_DATE_NAME&quot;                       =&gt;  &quot;$SEARCH_FILTER_DATE_NAME$&quot;,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        // Имя дополнительного фильтра по дате 
         &#10;&#9;&#9;// endregion
@@ -14109,8 +14109,8 @@
         &#10;&#9;&#9;&quot;FID&quot;                             =&gt;  array($FID$),                                            // Показывать только выбранные форумы : array ( 1 =&gt; 'Отзывы о товарах', )
         &#10;&#9;&#9;&quot;USER_PROPERTY&quot;                   =&gt;  array($USER_PROPERTY$),                                     // Показывать пользовательские поля в профиле 
         &#10;&#9;&#9;&quot;USER_FIELDS&quot;                     =&gt;  array($USER_FIELDS$),                                     // Показывать пользовательские поля сообщения 
-        &#10;&#9;&#9;&quot;HELP_CONTENT&quot;                    =&gt;  &quot;$HELP_CONTENT$&quot;,                                                   // Путь к файлу, содержащему "Помощь по форуму" (при пустом поле ввода будет использовано значение по умолчанию) 
-        &#10;&#9;&#9;&quot;RULES_CONTENT&quot;                   =&gt;  &quot;$RULES_CONTENT$&quot;,                                                   // Путь к файлу, содержащему "Правила форума" (при пустом поле ввода будет использовано значение по умолчанию) 
+        &#10;&#9;&#9;&quot;HELP_CONTENT&quot;                    =&gt;  &quot;$HELP_CONTENT$&quot;,                                                   // Путь к файлу, содержащему 'Помощь по форуму' (при пустом поле ввода будет использовано значение по умолчанию) 
+        &#10;&#9;&#9;&quot;RULES_CONTENT&quot;                   =&gt;  &quot;$RULES_CONTENT$&quot;,                                                   // Путь к файлу, содержащему 'Правила форума' (при пустом поле ввода будет использовано значение по умолчанию) 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Управление адресами страниц
         &#10;&#9;&#9;&quot;SEF_MODE&quot;                        =&gt;  &quot;$SEF_MODE$&quot;,                                                  // Включить поддержку ЧПУ 
@@ -15751,7 +15751,7 @@
         toReformat="false"
         toShortenFQNames="true"
         value="// Корзина&#10;$$APPLICATION-&gt;IncludeComponent(&#10;&#9;&quot;bitrix:sale.basket.basket&quot;,&#10;&#9;&quot;$template$&quot;,&#10;&#9;array(        &#10;&#9;&#9;// region Внешний вид
-        &#10;&#9;&#9;&quot;COLUMNS_LIST&quot;                   =&gt;  array($COLUMNS_LIST$),  // Выводимые колонки : array ( 'NAME' =&gt; 'Название товара', 'DISCOUNT' =&gt; 'Скидка', 'WEIGHT' =&gt; 'Вес', 'PROPS' =&gt; 'Свойства товара', 'DELETE' =&gt; 'Удалить', 'DELAY' =&gt; 'Отложить', 'TYPE' =&gt; 'Тип цены', 'PRICE' =&gt; 'Цена', 'QUANTITY' =&gt; 'Количество', 'SUM' =&gt; 'Сумма', 'PROPERTY_TITLE' =&gt; 'Заголовок окна браузера', 'PROPERTY_KEYWORDS' =&gt; 'Ключевые слова', 'PROPERTY_META_DESCRIPTION' =&gt; 'Мета-описание', 'PROPERTY_BRAND_REF' =&gt; 'Бренд', 'PROPERTY_NEWPRODUCT' =&gt; 'Новинка', 'PROPERTY_SALELEADER' =&gt; 'Лидер продаж', 'PROPERTY_SPECIALOFFER' =&gt; 'Спецпредложение', 'PROPERTY_ARTNUMBER' =&gt; 'Артикул ("Одежда", "Одежда (предложения)")', 'PROPERTY_MANUFACTURER' =&gt; 'Производитель', 'PROPERTY_MATERIAL' =&gt; 'Материал', 'PROPERTY_COLOR' =&gt; 'Цвет [COLOR] ', 'PROPERTY_MORE_PHOTO' =&gt; 'Картинки ("Одежда", "Одежда (предложения)")', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'Количество комментариев к элементу', 'PROPERTY_RECOMMEND' =&gt; 'С этим товаром рекомендуем', 'PROPERTY_FORUM_TOPIC_ID' =&gt; 'Тема форума для комментариев', 'PROPERTY_MINIMUM_PRICE' =&gt; 'Минимальная цена', 'PROPERTY_MAXIMUM_PRICE' =&gt; 'Максимальная цена', 'PROPERTY_CML2_LINK' =&gt; 'Элемент каталога', 'PROPERTY_COLOR_REF' =&gt; 'Цвет [COLOR_REF] ', 'PROPERTY_SIZES_SHOES' =&gt; 'Размеры обуви', 'PROPERTY_SIZES_CLOTHES' =&gt; 'Размеры одежды ', )
+        &#10;&#9;&#9;&quot;COLUMNS_LIST&quot;                   =&gt;  array($COLUMNS_LIST$),  // Выводимые колонки : array ( 'NAME' =&gt; 'Название товара', 'DISCOUNT' =&gt; 'Скидка', 'WEIGHT' =&gt; 'Вес', 'PROPS' =&gt; 'Свойства товара', 'DELETE' =&gt; 'Удалить', 'DELAY' =&gt; 'Отложить', 'TYPE' =&gt; 'Тип цены', 'PRICE' =&gt; 'Цена', 'QUANTITY' =&gt; 'Количество', 'SUM' =&gt; 'Сумма', 'PROPERTY_TITLE' =&gt; 'Заголовок окна браузера', 'PROPERTY_KEYWORDS' =&gt; 'Ключевые слова', 'PROPERTY_META_DESCRIPTION' =&gt; 'Мета-описание', 'PROPERTY_BRAND_REF' =&gt; 'Бренд', 'PROPERTY_NEWPRODUCT' =&gt; 'Новинка', 'PROPERTY_SALELEADER' =&gt; 'Лидер продаж', 'PROPERTY_SPECIALOFFER' =&gt; 'Спецпредложение', 'PROPERTY_ARTNUMBER' =&gt; 'Артикул ('Одежда', 'Одежда (предложения)')', 'PROPERTY_MANUFACTURER' =&gt; 'Производитель', 'PROPERTY_MATERIAL' =&gt; 'Материал', 'PROPERTY_COLOR' =&gt; 'Цвет [COLOR] ', 'PROPERTY_MORE_PHOTO' =&gt; 'Картинки ('Одежда', 'Одежда (предложения)')', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'Количество комментариев к элементу', 'PROPERTY_RECOMMEND' =&gt; 'С этим товаром рекомендуем', 'PROPERTY_FORUM_TOPIC_ID' =&gt; 'Тема форума для комментариев', 'PROPERTY_MINIMUM_PRICE' =&gt; 'Минимальная цена', 'PROPERTY_MAXIMUM_PRICE' =&gt; 'Максимальная цена', 'PROPERTY_CML2_LINK' =&gt; 'Элемент каталога', 'PROPERTY_COLOR_REF' =&gt; 'Цвет [COLOR_REF] ', 'PROPERTY_SIZES_SHOES' =&gt; 'Размеры обуви', 'PROPERTY_SIZES_CLOTHES' =&gt; 'Размеры одежды ', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Дополнительные настройки
         &#10;&#9;&#9;&quot;PATH_TO_ORDER&quot;                  =&gt;  &quot;$PATH_TO_ORDER$&quot;,                                                                                                                                      // Страница оформления заказа 
@@ -15889,8 +15889,8 @@
         toReformat="false"
         toShortenFQNames="true"
         value="// Заказы пользователя&#10;$$APPLICATION-&gt;IncludeComponent(&#10;&#9;&quot;bitrix:sale.personal.order&quot;,&#10;&#9;&quot;$template$&quot;,                     // [.default, list]&#10;&#9;array(        &#10;&#9;&#9;// region Основные параметры
-        &#10;&#9;&#9;&quot;PROP_1&quot;                    =&gt;  array($PROP_1$),                   // Не показывать свойства для типа плательщика "Физическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
-        &#10;&#9;&#9;&quot;PROP_2&quot;                    =&gt;  array($PROP_2$),                   // Не показывать свойства для типа плательщика "Юридическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_1&quot;                    =&gt;  array($PROP_1$),                   // Не показывать свойства для типа плательщика 'Физическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_2&quot;                    =&gt;  array($PROP_2$),                   // Не показывать свойства для типа плательщика 'Юридическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Внешний вид
         &#10;&#9;&#9;&quot;ACTIVE_DATE_FORMAT&quot;        =&gt;  &quot;$ACTIVE_DATE_FORMAT$&quot;,                     // Формат показа даты : array ( 'd-m-Y' =&gt; '22-02-2007', 'm-d-Y' =&gt; '02-22-2007', 'Y-m-d' =&gt; '2007-02-22', 'd.m.Y' =&gt; '22.02.2007', 'd.M.Y' =&gt; '22.Фев.2007', 'm.d.Y' =&gt; '02.22.2007', 'j M Y' =&gt; '22 Фев 2007', 'M j, Y' =&gt; 'Фев 22, 2007', 'j F Y' =&gt; '22 Февраля 2007', 'f j, Y' =&gt; 'Февраль 22, 2007', 'd.m.y g:i A' =&gt; '22.02.07 7:30 AM', 'd.M.y g:i A' =&gt; '22.Фев.07 7:30 AM', 'd.M.Y g:i A' =&gt; '22.Фев.2007 7:30 AM', 'd.m.y G:i' =&gt; '22.02.07 7:30', 'd.m.Y H:i' =&gt; '22.02.2007 07:30', 'SHORT' =&gt; 'Формат сайта', 'FULL' =&gt; 'Формат сайта (включая время)', )
@@ -16083,8 +16083,8 @@
         toReformat="false"
         toShortenFQNames="true"
         value="// Подробная информация о заказе&#10;$$APPLICATION-&gt;IncludeComponent(&#10;&#9;&quot;bitrix:sale.personal.order.detail&quot;,&#10;&#9;&quot;$template$&quot;,&#10;&#9;array(        &#10;&#9;&#9;// region Основные параметры
-        &#10;&#9;&#9;&quot;PROP_1&quot;                 =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика "Физическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
-        &#10;&#9;&#9;&quot;PROP_2&quot;                 =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика "Юридическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_1&quot;                 =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика 'Физическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_2&quot;                 =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика 'Юридическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Внешний вид
         &#10;&#9;&#9;&quot;ACTIVE_DATE_FORMAT&quot;     =&gt;  &quot;$ACTIVE_DATE_FORMAT$&quot;,        // Формат показа даты : array ( 'd-m-Y' =&gt; '22-02-2007', 'm-d-Y' =&gt; '02-22-2007', 'Y-m-d' =&gt; '2007-02-22', 'd.m.Y' =&gt; '22.02.2007', 'd.M.Y' =&gt; '22.Фев.2007', 'm.d.Y' =&gt; '02.22.2007', 'j M Y' =&gt; '22 Фев 2007', 'M j, Y' =&gt; 'Фев 22, 2007', 'j F Y' =&gt; '22 Февраля 2007', 'f j, Y' =&gt; 'Февраль 22, 2007', 'd.m.y g:i A' =&gt; '22.02.07 7:30 AM', 'd.M.y g:i A' =&gt; '22.Фев.07 7:30 AM', 'd.M.Y g:i A' =&gt; '22.Фев.2007 7:30 AM', 'd.m.y G:i' =&gt; '22.02.07 7:30', 'd.m.Y H:i' =&gt; '22.02.2007 07:30', 'SHORT' =&gt; 'Формат сайта', 'FULL' =&gt; 'Формат сайта (включая время)', )
@@ -16449,8 +16449,8 @@
         &#10;&#9;&#9;&quot;TEMPLATE_LOCATION&quot;           =&gt;  &quot;$TEMPLATE_LOCATION$&quot;,     // Шаблон местоположения : array ( '.default' =&gt; 'По-умолчанию', 'popup' =&gt; 'Строка поиска', )
         &#10;&#9;&#9;&quot;DELIVERY_TO_PAYSYSTEM&quot;       =&gt;  &quot;$DELIVERY_TO_PAYSYSTEM$&quot;,             // Последовательность оформления : array ( 'd2p' =&gt; 'Доставка -&gt; Оплата', 'p2d' =&gt; 'Оплата -&gt; Доставка', )
         &#10;&#9;&#9;&quot;USE_PREPAYMENT&quot;              =&gt;  &quot;$USE_PREPAYMENT$&quot;,            // Использовать предавторизацию для оформления заказа (PayPal Express Checkout) 
-        &#10;&#9;&#9;&quot;PROP_1&quot;                      =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика "Физическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
-        &#10;&#9;&#9;&quot;PROP_2&quot;                      =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика "Юридическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_1&quot;                      =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика 'Физическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_2&quot;                      =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика 'Юридическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Дополнительные настройки
         &#10;&#9;&#9;&quot;PATH_TO_BASKET&quot;              =&gt;  &quot;$PATH_TO_BASKET$&quot;,   // Страница корзины 
@@ -16459,7 +16459,7 @@
         &#10;&#9;&#9;&quot;PATH_TO_AUTH&quot;                =&gt;  &quot;$PATH_TO_AUTH$&quot;,       // Страница авторизации 
         &#10;&#9;&#9;&quot;SET_TITLE&quot;                   =&gt;  &quot;$SET_TITLE$&quot;,            // Устанавливать заголовок страницы 
         &#10;&#9;&#9;&quot;DISABLE_BASKET_REDIRECT&quot;     =&gt;  &quot;$DISABLE_BASKET_REDIRECT$&quot;,            // Оставаться на странице, если корзина пуста 
-        &#10;&#9;&#9;&quot;PRODUCT_COLUMNS&quot;             =&gt;  array($PRODUCT_COLUMNS$),  // Дополнительные колонки таблицы товаров заказа : array ( 'PREVIEW_PICTURE' =&gt; 'Изображение', 'DETAIL_PICTURE' =&gt; 'Детальное изображение', 'PREVIEW_TEXT' =&gt; 'Краткое описание', 'PROPS' =&gt; 'Свойства', 'NOTES' =&gt; 'Тип цены', 'DISCOUNT_PRICE_PERCENT_FORMATED' =&gt; 'Скидка', 'WEIGHT_FORMATED' =&gt; 'Вес', 'PROPERTY_ARTNUMBER' =&gt; 'Артикул ("", "")', 'PROPERTY_BRAND_REF' =&gt; 'Бренд', 'PROPERTY_TITLE' =&gt; 'Заголовок окна браузера', 'PROPERTY_MORE_PHOTO' =&gt; 'Картинки ("", "")', 'PROPERTY_KEYWORDS' =&gt; 'Ключевые слова', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'Количество комментариев к элементу', 'PROPERTY_SALELEADER' =&gt; 'Лидер продаж', 'PROPERTY_MAXIMUM_PRICE' =&gt; 'Максимальная цена', 'PROPERTY_MATERIAL' =&gt; 'Материал', 'PROPERTY_META_DESCRIPTION' =&gt; 'Мета-описание', 'PROPERTY_MINIMUM_PRICE' =&gt; 'Минимальная цена', 'PROPERTY_NEWPRODUCT' =&gt; 'Новинка', 'PROPERTY_MANUFACTURER' =&gt; 'Производитель', 'PROPERTY_RECOMMEND' =&gt; 'С этим товаром рекомендуем', 'PROPERTY_SPECIALOFFER' =&gt; 'Спецпредложение', 'PROPERTY_FORUM_TOPIC_ID' =&gt; 'Тема форума для комментариев', 'PROPERTY_COLOR' =&gt; 'Цвет [COLOR] ', 'PROPERTY_SIZES_SHOES' =&gt; 'Размеры обуви', 'PROPERTY_SIZES_CLOTHES' =&gt; 'Размеры одежды ', 'PROPERTY_COLOR_REF' =&gt; 'Цвет [COLOR_REF] ', )
+        &#10;&#9;&#9;&quot;PRODUCT_COLUMNS&quot;             =&gt;  array($PRODUCT_COLUMNS$),  // Дополнительные колонки таблицы товаров заказа : array ( 'PREVIEW_PICTURE' =&gt; 'Изображение', 'DETAIL_PICTURE' =&gt; 'Детальное изображение', 'PREVIEW_TEXT' =&gt; 'Краткое описание', 'PROPS' =&gt; 'Свойства', 'NOTES' =&gt; 'Тип цены', 'DISCOUNT_PRICE_PERCENT_FORMATED' =&gt; 'Скидка', 'WEIGHT_FORMATED' =&gt; 'Вес', 'PROPERTY_ARTNUMBER' =&gt; 'Артикул ('', '')', 'PROPERTY_BRAND_REF' =&gt; 'Бренд', 'PROPERTY_TITLE' =&gt; 'Заголовок окна браузера', 'PROPERTY_MORE_PHOTO' =&gt; 'Картинки ('', '')', 'PROPERTY_KEYWORDS' =&gt; 'Ключевые слова', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'Количество комментариев к элементу', 'PROPERTY_SALELEADER' =&gt; 'Лидер продаж', 'PROPERTY_MAXIMUM_PRICE' =&gt; 'Максимальная цена', 'PROPERTY_MATERIAL' =&gt; 'Материал', 'PROPERTY_META_DESCRIPTION' =&gt; 'Мета-описание', 'PROPERTY_MINIMUM_PRICE' =&gt; 'Минимальная цена', 'PROPERTY_NEWPRODUCT' =&gt; 'Новинка', 'PROPERTY_MANUFACTURER' =&gt; 'Производитель', 'PROPERTY_RECOMMEND' =&gt; 'С этим товаром рекомендуем', 'PROPERTY_SPECIALOFFER' =&gt; 'Спецпредложение', 'PROPERTY_FORUM_TOPIC_ID' =&gt; 'Тема форума для комментариев', 'PROPERTY_COLOR' =&gt; 'Цвет [COLOR] ', 'PROPERTY_SIZES_SHOES' =&gt; 'Размеры обуви', 'PROPERTY_SIZES_CLOTHES' =&gt; 'Размеры одежды ', 'PROPERTY_COLOR_REF' =&gt; 'Цвет [COLOR_REF] ', )
         &#10;&#9;&#9;// endregion
 &#10;&#9;)&#10;);"
     >
@@ -16537,8 +16537,8 @@
         &#10;&#9;&#9;&quot;ONLY_FULL_PAY_FROM_ACCOUNT&quot;     =&gt;  &quot;$ONLY_FULL_PAY_FROM_ACCOUNT$&quot;,            // Позволять оплачивать с внутреннего счета только в полном объеме : array ( 'N' =&gt; 'Нет', 'Y' =&gt; 'Да', )
         &#10;&#9;&#9;&quot;SEND_NEW_USER_NOTIFY&quot;           =&gt;  &quot;$SEND_NEW_USER_NOTIFY$&quot;,            // Отправлять пользователю письмо, что он зарегистрирован на сайте 
         &#10;&#9;&#9;&quot;DELIVERY_NO_SESSION&quot;            =&gt;  &quot;$DELIVERY_NO_SESSION$&quot;,            // Проверять сессию при оформлении заказа 
-        &#10;&#9;&#9;&quot;PROP_1&quot;                         =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика "Физическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
-        &#10;&#9;&#9;&quot;PROP_2&quot;                         =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика "Юридическое лицо" (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_1&quot;                         =&gt;  array($PROP_1$),      // Не показывать свойства для типа плательщика 'Физическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 1 =&gt; 'Ф.И.О.', 2 =&gt; 'E-Mail', 3 =&gt; 'Телефон', 4 =&gt; 'Индекс', 6 =&gt; 'Местоположение', 5 =&gt; 'Город', 7 =&gt; 'Адрес доставки', )
+        &#10;&#9;&#9;&quot;PROP_2&quot;                         =&gt;  array($PROP_2$),      // Не показывать свойства для типа плательщика 'Юридическое лицо' (s1) : array ( '' =&gt; '(показывать все)', 8 =&gt; 'Название компании', 9 =&gt; 'Юридический адрес', 10 =&gt; 'ИНН', 11 =&gt; 'КПП', 12 =&gt; 'Контактное лицо', 13 =&gt; 'E-Mail', 14 =&gt; 'Телефон', 15 =&gt; 'Факс', 16 =&gt; 'Индекс', 17 =&gt; 'Город', 18 =&gt; 'Местоположение', 19 =&gt; 'Адрес доставки', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Дополнительные настройки
         &#10;&#9;&#9;&quot;PATH_TO_BASKET&quot;                 =&gt;  &quot;$PATH_TO_BASKET$&quot;,   // Страница корзины 
@@ -16585,13 +16585,13 @@
         toReformat="false"
         toShortenFQNames="true"
         value="// Экспорт заказов в 1С:Предприятие&#10;$$APPLICATION-&gt;IncludeComponent(&#10;&#9;&quot;bitrix:sale.export.1c&quot;,&#10;&#9;&quot;$template$&quot;,&#10;&#9;array(        &#10;&#9;&#9;// region Основные параметры
-        &#10;&#9;&#9;&quot;SITE_LIST&quot;                     =&gt;  &quot;$SITE_LIST$&quot;,                      // Сайт, заказы которого выгружать в "1С:Предприятие" : array ( '' =&gt; 'Все сайты', 's1' =&gt; 'Интернет-магазин (Сайт по умолчанию)', )
+        &#10;&#9;&#9;&quot;SITE_LIST&quot;                     =&gt;  &quot;$SITE_LIST$&quot;,                      // Сайт, заказы которого выгружать в '1С:Предприятие' : array ( '' =&gt; 'Все сайты', 's1' =&gt; 'Интернет-магазин (Сайт по умолчанию)', )
         &#10;&#9;&#9;&quot;IMPORT_NEW_ORDERS&quot;             =&gt;  &quot;$IMPORT_NEW_ORDERS$&quot;,                     // Создавать новые заказы и контрагенты из 1С 
         &#10;&#9;&#9;&quot;1C_SITE_NEW_ORDERS&quot;            =&gt;  &quot;$1C_SITE_NEW_ORDERS$&quot;,                      // Сайт, на который добавлять новые заказы и контрагенты : array ( '' =&gt; 'Все сайты', 's1' =&gt; 'Интернет-магазин (Сайт по умолчанию)', )
         &#10;&#9;&#9;&quot;EXPORT_PAYED_ORDERS&quot;           =&gt;  &quot;$EXPORT_PAYED_ORDERS$&quot;,                     // Выгружать только оплаченные заказы 
         &#10;&#9;&#9;&quot;EXPORT_ALLOW_DELIVERY_ORDERS&quot;  =&gt;  &quot;$EXPORT_ALLOW_DELIVERY_ORDERS$&quot;,                     // Выгружать только заказы c разрешенной доставкой 
         &#10;&#9;&#9;&quot;EXPORT_FINAL_ORDERS&quot;           =&gt;  &quot;$EXPORT_FINAL_ORDERS$&quot;,                      // Выгружать заказы, начиная со статуса : array ( '' =&gt; '&lt;Не выбрано&gt;', 'N' =&gt; '[N] Принят, ожидается оплата', 'P' =&gt; '[P] Оплачен, формируется к отправке', 'F' =&gt; '[F] Выполнен', )
-        &#10;&#9;&#9;&quot;REPLACE_CURRENCY&quot;              =&gt;  &quot;$REPLACE_CURRENCY$&quot;,                  // Заменять валюту при выгрузке в "1С:Предприятие" на 
+        &#10;&#9;&#9;&quot;REPLACE_CURRENCY&quot;              =&gt;  &quot;$REPLACE_CURRENCY$&quot;,                  // Заменять валюту при выгрузке в '1С:Предприятие' на 
         &#10;&#9;&#9;&quot;GROUP_PERMISSIONS&quot;             =&gt;  array($GROUP_PERMISSIONS$),  // Группы пользователей, которым разрешена выгрузка : array ( 1 =&gt; 'Администраторы', 2 =&gt; 'Все пользователи (в том числе неавторизованные)', 3 =&gt; 'Пользователи, имеющие право голосовать за рейтинг', 5 =&gt; 'Зарегистрированные пользователи', 4 =&gt; 'Пользователи имеющие право голосовать за авторитет', 6 =&gt; 'Администраторы интернет-магазина', 7 =&gt; 'Контент-редакторы', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region 
@@ -16638,9 +16638,9 @@
         &#10;&#9;&#9;&quot;PRODUCT_SUBSCRIPTION&quot;        =&gt;  &quot;$PRODUCT_SUBSCRIPTION$&quot;,                     // Разрешить оповещения для отсутствующих товаров 
         &#10;&#9;&#9;&quot;SHOW_NAME&quot;                   =&gt;  &quot;$SHOW_NAME$&quot;,                     // Показывать название 
         &#10;&#9;&#9;&quot;SHOW_IMAGE&quot;                  =&gt;  &quot;$SHOW_IMAGE$&quot;,                     // Показывать изображение 
-        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                // Текст кнопки "Купить" 
-        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,             // Текст кнопки "Подробнее" 
-        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,           // Текст кнопки "Уведомить о поступлении" 
+        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                // Текст кнопки 'Купить' 
+        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,             // Текст кнопки 'Подробнее' 
+        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,           // Текст кнопки 'Уведомить о поступлении' 
         &#10;&#9;&#9;&quot;PAGE_ELEMENT_COUNT&quot;          =&gt;  &quot;$PAGE_ELEMENT_COUNT$&quot;,                    // Количество элементов на странице 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Шаблоны ссылок
@@ -16754,10 +16754,10 @@
         &#10;&#9;&#9;&quot;PRODUCT_SUBSCRIPTION&quot;        =&gt;  &quot;$PRODUCT_SUBSCRIPTION$&quot;,                           // Разрешить оповещения для отсутствующих товаров 
         &#10;&#9;&#9;&quot;SHOW_NAME&quot;                   =&gt;  &quot;$SHOW_NAME$&quot;,                           // Показывать название 
         &#10;&#9;&#9;&quot;SHOW_IMAGE&quot;                  =&gt;  &quot;$SHOW_IMAGE$&quot;,                           // Показывать изображение 
-        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                      // Текст кнопки "Купить" 
-        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,                   // Текст кнопки "Подробнее" 
+        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                      // Текст кнопки 'Купить' 
+        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,                   // Текст кнопки 'Подробнее' 
         &#10;&#9;&#9;&quot;MESS_NOT_AVAILABLE&quot;          =&gt;  &quot;$MESS_NOT_AVAILABLE$&quot;,               // Сообщение об отсутствии товара 
-        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,                 // Текст кнопки "Уведомить о поступлении" 
+        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,                 // Текст кнопки 'Уведомить о поступлении' 
         &#10;&#9;&#9;&quot;PAGE_ELEMENT_COUNT&quot;          =&gt;  &quot;$PAGE_ELEMENT_COUNT$&quot;,                          // Количество элементов на странице 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Шаблоны ссылок
@@ -16862,10 +16862,10 @@
         &#10;&#9;&#9;&quot;PRODUCT_SUBSCRIPTION&quot;        =&gt;  &quot;$PRODUCT_SUBSCRIPTION$&quot;,                     // Разрешить оповещения для отсутствующих товаров 
         &#10;&#9;&#9;&quot;SHOW_NAME&quot;                   =&gt;  &quot;$SHOW_NAME$&quot;,                     // Показывать название 
         &#10;&#9;&#9;&quot;SHOW_IMAGE&quot;                  =&gt;  &quot;$SHOW_IMAGE$&quot;,                     // Показывать изображение 
-        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                // Текст кнопки "Купить" 
-        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,             // Текст кнопки "Подробнее" 
+        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                // Текст кнопки 'Купить' 
+        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,             // Текст кнопки 'Подробнее' 
         &#10;&#9;&#9;&quot;MESS_NOT_AVAILABLE&quot;          =&gt;  &quot;$MESS_NOT_AVAILABLE$&quot;,         // Сообщение об отсутствии товара 
-        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,           // Текст кнопки "Уведомить о поступлении" 
+        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,           // Текст кнопки 'Уведомить о поступлении' 
         &#10;&#9;&#9;&quot;PAGE_ELEMENT_COUNT&quot;          =&gt;  &quot;$PAGE_ELEMENT_COUNT$&quot;,                    // Количество элементов на странице 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Шаблоны ссылок
@@ -16993,10 +16993,10 @@
         &#10;&#9;&#9;&quot;PRODUCT_SUBSCRIPTION&quot;        =&gt;  &quot;$PRODUCT_SUBSCRIPTION$&quot;,                           // Разрешить оповещения для отсутствующих товаров 
         &#10;&#9;&#9;&quot;SHOW_NAME&quot;                   =&gt;  &quot;$SHOW_NAME$&quot;,                           // Показывать название 
         &#10;&#9;&#9;&quot;SHOW_IMAGE&quot;                  =&gt;  &quot;$SHOW_IMAGE$&quot;,                           // Показывать изображение 
-        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                      // Текст кнопки "Купить" 
-        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,                   // Текст кнопки "Подробнее" 
+        &#10;&#9;&#9;&quot;MESS_BTN_BUY&quot;                =&gt;  &quot;$MESS_BTN_BUY$&quot;,                      // Текст кнопки 'Купить' 
+        &#10;&#9;&#9;&quot;MESS_BTN_DETAIL&quot;             =&gt;  &quot;$MESS_BTN_DETAIL$&quot;,                   // Текст кнопки 'Подробнее' 
         &#10;&#9;&#9;&quot;MESS_NOT_AVAILABLE&quot;          =&gt;  &quot;$MESS_NOT_AVAILABLE$&quot;,               // Сообщение об отсутствии товара 
-        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,                 // Текст кнопки "Уведомить о поступлении" 
+        &#10;&#9;&#9;&quot;MESS_BTN_SUBSCRIBE&quot;          =&gt;  &quot;$MESS_BTN_SUBSCRIBE$&quot;,                 // Текст кнопки 'Уведомить о поступлении' 
         &#10;&#9;&#9;&quot;PAGE_ELEMENT_COUNT&quot;          =&gt;  &quot;$PAGE_ELEMENT_COUNT$&quot;,                          // Количество элементов на странице 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Шаблоны ссылок
@@ -17508,7 +17508,7 @@
         &#10;&#9;&#9;&quot;ORDER&quot;               =&gt;  &quot;$ORDER$&quot;,                        // Сортировка результатов : array ( 'date' =&gt; 'по дате', 'rank' =&gt; 'по релевантности', )
         &#10;&#9;&#9;&quot;USE_LANGUAGE_GUESS&quot;  =&gt;  &quot;$USE_LANGUAGE_GUESS$&quot;,                           // Включить автоопределение раскладки клавиатуры 
         &#10;&#9;&#9;&quot;CHECK_DATES&quot;         =&gt;  &quot;$CHECK_DATES$&quot;,                           // Искать только в активных по дате документах 
-        &#10;&#9;&#9;&quot;SHOW_OTHERS&quot;         =&gt;  &quot;$SHOW_OTHERS$&quot;,                           // Показывать категорию "прочее" 
+        &#10;&#9;&#9;&quot;SHOW_OTHERS&quot;         =&gt;  &quot;$SHOW_OTHERS$&quot;,                           // Показывать категорию 'прочее' 
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Шаблоны ссылок
         &#10;&#9;&#9;&quot;PAGE&quot;                =&gt;  &quot;$PAGE$&quot;,  // Страница выдачи результатов поиска (доступен макрос #SITE_DIR#) 
@@ -17574,8 +17574,8 @@
         &#10;&#9;&#9;&quot;arrFILTER&quot;               =&gt;  array($arrFILTER$),         // Ограничение области поиска : array ( 'no' =&gt; 'Не ограничивать', 'main' =&gt; '[main] Статические файлы', 'forum' =&gt; '[forum] Форумы для поиска', 'iblock_catalog' =&gt; '[iblock_catalog] Каталоги', 'iblock_news' =&gt; '[iblock_news] Новости', 'iblock_offers' =&gt; '[iblock_offers] Торговые предложения', 'iblock_services' =&gt; '[iblock_services] Сервисы', 'iblock_references' =&gt; '[iblock_references] Справочники', 'blog' =&gt; '[blog] Блоги', 'microblog' =&gt; '[microblog] Микроблоги', 'socialnetwork' =&gt; '[socialnetwork] Социальная сеть (группы)', 'socialnetwork_user' =&gt; '[socialnetwork_user] Социальная сеть (пользователь)', )
         &#10;&#9;&#9;// endregion
         &#10;&#9;&#9;// region Внешний вид
-        &#10;&#9;&#9;&quot;SHOW_WHERE&quot;              =&gt;  &quot;$SHOW_WHERE$&quot;,                  // Показывать выпадающий список "Где искать" 
-        &#10;&#9;&#9;&quot;arrWHERE&quot;                =&gt;  array($arrWHERE$),            // Значения для выпадающего списка "Где искать" : array ( 'forum' =&gt; '[forum] Форумы для поиска', 'iblock_catalog' =&gt; '[iblock_catalog] Каталоги', 'iblock_news' =&gt; '[iblock_news] Новости', 'iblock_offers' =&gt; '[iblock_offers] Торговые предложения', 'iblock_services' =&gt; '[iblock_services] Сервисы', 'iblock_references' =&gt; '[iblock_references] Справочники', 'blog' =&gt; '[blog] Блоги', 'socialnetwork' =&gt; '[socialnetwork] Социальная сеть (группы)', 'socialnetwork_user' =&gt; '[socialnetwork_user] Социальная сеть (пользователь)', )
+        &#10;&#9;&#9;&quot;SHOW_WHERE&quot;              =&gt;  &quot;$SHOW_WHERE$&quot;,                  // Показывать выпадающий список 'Где искать' 
+        &#10;&#9;&#9;&quot;arrWHERE&quot;                =&gt;  array($arrWHERE$),            // Значения для выпадающего списка 'Где искать' : array ( 'forum' =&gt; '[forum] Форумы для поиска', 'iblock_catalog' =&gt; '[iblock_catalog] Каталоги', 'iblock_news' =&gt; '[iblock_news] Новости', 'iblock_offers' =&gt; '[iblock_offers] Торговые предложения', 'iblock_services' =&gt; '[iblock_services] Сервисы', 'iblock_references' =&gt; '[iblock_references] Справочники', 'blog' =&gt; '[blog] Блоги', 'socialnetwork' =&gt; '[socialnetwork] Социальная сеть (группы)', 'socialnetwork_user' =&gt; '[socialnetwork_user] Социальная сеть (пользователь)', )
         &#10;&#9;&#9;&quot;SHOW_WHEN&quot;               =&gt;  &quot;$SHOW_WHEN$&quot;,                  // Показывать фильтр по датам 
         &#10;&#9;&#9;&quot;PAGE_RESULT_COUNT&quot;       =&gt;  &quot;$PAGE_RESULT_COUNT$&quot;,                 // Количество результатов на странице 
         &#10;&#9;&#9;// endregion
