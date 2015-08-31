@@ -10,7 +10,7 @@
 		description="Top элементов каталога     [Мобильное приложение для интернет-магазина]"
 	>// Top элементов каталога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:eshopapp.top", &#13;
 	".default",                        // [.default, slider]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -68,7 +68,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Корзина     [Мобильное приложение для интернет-магазина]"
 	>// Корзина&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:eshopapp.basket", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -111,7 +111,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Калькулятор доставки (AJAX) "
 	>// Калькулятор доставки (AJAX)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:eshopapp.ajax.delivery.calculator", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -127,7 +127,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Одношаговое оформление заказа "
 	>// Одношаговое оформление заказа&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:eshopapp.order.ajax", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -164,7 +164,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Плагин facebook     [Современный интернет-магазин]"
 	>// Плагин facebook&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:eshop.facebook.plugin", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -185,7 +185,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Новости     [Информационные блоки]"
 	>// Новости&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:news", &#13;
 	".default",                            // [.default, web20]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -293,7 +293,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список новостей     [Информационные блоки]"
 	>// Список новостей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:news.list", &#13;
 	".default",                            // [bottom, .default, official, table]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -366,7 +366,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Новость детально     [Информационные блоки]"
 	>// Новость детально&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:news.detail", &#13;
 	".default",                      // [.default, official]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -431,7 +431,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Лента     [Информационные блоки]"
 	>// Лента&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:news.line", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -471,7 +471,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Календарь     [Информационные блоки]"
 	>// Календарь&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:news.calendar", &#13;
 	".default",                   // [.default, compact]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -522,7 +522,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Все новости     [Информационные блоки]"
 	>// Все новости&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:news.index", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -567,7 +567,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотогалерея     [Информационные блоки]"
 	>// Фотогалерея&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photo", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -661,7 +661,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Разделы с TOPом фотографий     [Информационные блоки]"
 	>// Разделы с TOPом фотографий&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photo.sections.top", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -708,7 +708,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотографии раздела     [Информационные блоки]"
 	>// Фотографии раздела&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photo.section", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -778,7 +778,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотография детально     [Информационные блоки]"
 	>// Фотография детально&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photo.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -832,7 +832,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Случайное фото     [Информационные блоки]"
 	>// Случайное фото&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photo.random", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -864,7 +864,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотогалерея 2.0     [Фотогалерея 2.0]"
 	>// Фотогалерея 2.0&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery", &#13;
 	".default",                                // [.default, old]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -952,7 +952,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотогалерея 2.0 (многопользовательская)     [Фотогалерея 2.0]"
 	>// Фотогалерея 2.0 (многопользовательская)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery_user", &#13;
 	".default",                                // [.default, old]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1049,7 +1049,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Альбом     [Фотогалерея 2.0]"
 	>// Альбом&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.section", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1094,7 +1094,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Альбом (список)     [Фотогалерея 2.0]"
 	>// Альбом (список)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.section.list", &#13;
 	".default",                     // [.big, .default]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1146,7 +1146,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Панель     [Фотогалерея 2.0]"
 	>// Панель&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.user", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1185,7 +1185,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотогалерея (редактирование)     [Фотогалерея 2.0]"
 	>// Фотогалерея (редактирование)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.gallery.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1218,7 +1218,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотогалерея (список)     [Фотогалерея 2.0]"
 	>// Фотогалерея (список)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.gallery.list", &#13;
 	".default",                     // [.default, ascetic]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1262,7 +1262,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фотогалерея (шаблоны)     [Фотогалерея 2.0]"
 	>// Фотогалерея (шаблоны)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.interface", &#13;
 	".default",  // [.default, bookmark]&#13;
 	array(&#13;
 
@@ -1278,7 +1278,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Flash-слайдшоу     [Фотогалерея 2.0]"
 	>// Flash-слайдшоу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.imagerotator", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Параметры отображения
@@ -1329,7 +1329,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Альбом (редактирование обложки)     [Фотогалерея 2.0]"
 	>// Альбом (редактирование обложки)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.section.edit.icon", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1365,7 +1365,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Альбом (редактирование)     [Фотогалерея 2.0]"
 	>// Альбом (редактирование)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.section.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1404,7 +1404,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список фото (со слайдером)     [Фотогалерея 2.0]"
 	>// Список фото (со слайдером)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.detail.list.ex", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1459,7 +1459,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фото     [Фотогалерея 2.0]"
 	>// Фото&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1509,7 +1509,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фото (загрузка)     [Фотогалерея 2.0]"
 	>// Фото (загрузка)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.upload", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1559,7 +1559,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фото (комментарии)     [Фотогалерея 2.0]"
 	>// Фото (комментарии)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.detail.comment", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1596,7 +1596,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фото (редактирование)     [Фотогалерея 2.0]"
 	>// Фото (редактирование)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.detail.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1630,7 +1630,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фото (список)     [Фотогалерея 2.0]"
 	>// Фото (список)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:photogallery.detail.list", &#13;
 	".default",                     // [.default, simple, slide_show, slider, slider_big, slider_fixed]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1682,7 +1682,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Структура разделов     [Информационные блоки]"
 	>// Структура разделов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.section.list", &#13;
 	".default",                // [.default, tree]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1722,7 +1722,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Элементы раздела     [Информационные блоки]"
 	>// Элементы раздела&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.section", &#13;
 	".default",                            // [.default, board, links, list]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1824,7 +1824,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Каталог     [Информационные блоки]"
 	>// Каталог&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog", &#13;
 	".default",                             // [mobile, .default]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -1965,7 +1965,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск по каталогу     [Информационные блоки]"
 	>// Поиск по каталогу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2048,7 +2048,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Бренды     [Информационные блоки]"
 	>// Бренды&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.brandblock", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2083,7 +2083,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Презентационный список     [Корпоративный сайт услуг]"
 	>// Презентационный список&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:furniture.catalog.index", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2110,7 +2110,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Специальное предложение     [Корпоративный сайт услуг]"
 	>// Специальное предложение&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:furniture.catalog.random", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2142,7 +2142,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Элемент каталога детально     [Информационные блоки]"
 	>// Элемент каталога детально&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.element", &#13;
 	".default",                       // [.default, board]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2228,7 +2228,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список сравниваемых элементов каталога     [Информационные блоки]"
 	>// Список сравниваемых элементов каталога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.compare.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2264,7 +2264,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Таблица сравнения     [Информационные блоки]"
 	>// Таблица сравнения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.compare.result", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2320,7 +2320,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Умный фильтр     [Информационные блоки]"
 	>// Умный фильтр&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.smart.filter", &#13;
 	".default",                // [mobile, .default, visual, visual_horizontal, visual_vertical]&#13;
 	array(&#13;
 		// region Источник данных
@@ -2361,7 +2361,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Фильтр по элементам     [Информационные блоки]"
 	>// Фильтр по элементам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.filter", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2401,7 +2401,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список информационных блоков заданного типа     [Информационные блоки]"
 	>// Список информационных блоков заданного типа&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.main", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2429,7 +2429,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Top элементов каталога     [Информационные блоки]"
 	>// Top элементов каталога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.top", &#13;
 	".default",                       // [.default, slider]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2500,7 +2500,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Конструктор наборов     [Информационные блоки]"
 	>// Конструктор наборов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.set.constructor", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2535,7 +2535,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Разделы с topом элементов     [Информационные блоки]"
 	>// Разделы с topом элементов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.sections.top", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2602,7 +2602,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список связанных элементов     [Информационные блоки]"
 	>// Список связанных элементов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.link.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -2683,7 +2683,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Универсальные списки     [Универсальные списки]"
 	>// Универсальные списки&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2735,7 +2735,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Списки     [Универсальные списки]"
 	>// Списки&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.lists", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2764,7 +2764,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список     [Универсальные списки]"
 	>// Список&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2801,7 +2801,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Разделы списка     [Универсальные списки]"
 	>// Разделы списка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.sections", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2833,7 +2833,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование элемента     [Универсальные списки]"
 	>// Редактирование элемента&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.element.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2869,7 +2869,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настройки списка     [Универсальные списки]"
 	>// Настройки списка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.list.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2900,7 +2900,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поля списка     [Универсальные списки]"
 	>// Поля списка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.fields", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2932,7 +2932,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настройки поля списка     [Универсальные списки]"
 	>// Настройки поля списка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.field.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2965,7 +2965,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Навигационная цепочка     [Универсальные списки]"
 	>// Навигационная цепочка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.element.navchain", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -2997,7 +2997,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню списков     [Универсальные списки]"
 	>// Меню списков&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.menu", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -3026,7 +3026,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Скачивание файла     [Универсальные списки]"
 	>// Скачивание файла&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:lists.file", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -3050,7 +3050,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Google: настраиваемая карта     [Управление структурой]"
 	>// Google: настраиваемая карта - http://dev.1c-bitrix.ru/user_help/content/fileman/components_2/google_maps/map_google_view.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:map.google.view", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3077,7 +3077,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Google: поиск по адресу     [Управление структурой]"
 	>// Google: поиск по адресу - http://dev.1c-bitrix.ru/user_help/content/fileman/components_2/google_maps/map_google_search.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:map.google.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3104,7 +3104,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Запись детально     [Highload-блоки]"
 	>// Запись детально - http://dev.1c-bitrix.ru/user_help/content/highloadblock/components_2/highloadblock_view.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:highloadblock.view", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3125,7 +3125,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список записей     [Highload-блоки]"
 	>// Список записей - http://dev.1c-bitrix.ru/user_help/content/highloadblock/components_2/highloadblock_list.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:highloadblock.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3145,7 +3145,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="RSS новости (импорт)     [Информационные блоки]"
 	>// RSS новости (импорт)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:rss.show", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3172,7 +3172,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="RSS новости (экспорт)     [Информационные блоки]"
 	>// RSS новости (экспорт)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:rss.out", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3214,7 +3214,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Wiki     [Wiki]"
 	>// Wiki - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3269,7 +3269,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню     [Wiki]"
 	>// Меню - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_menu.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.menu", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3308,7 +3308,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Страница     [Wiki]"
 	>// Страница - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_show.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.show", &#13;
 	".default",                      // [.default, gadget]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3355,7 +3355,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование     [Wiki]"
 	>// Редактирование - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_edit.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3394,7 +3394,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Категории     [Wiki]"
 	>// Категории - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_categories.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.categories", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3422,7 +3422,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="История     [Wiki]"
 	>// История - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_history.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.history", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3467,7 +3467,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Обсуждение     [Wiki]"
 	>// Обсуждение - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_discussion.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.discussion", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3516,7 +3516,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сравнение версии     [Wiki]"
 	>// Сравнение версии - http://dev.1c-bitrix.ru/user_help/content/wiki/components_2/wiki_history_diff.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:wiki.history.diff", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3561,7 +3561,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Таблица курсов валют     [Валюты]"
 	>// Таблица курсов валют&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:currency.rates", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки кеширования
@@ -3588,7 +3588,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Добавление элементов инфоблока     [Информационные блоки]"
 	>// Добавление элементов инфоблока&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:iblock.element.add", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Параметры компонента
@@ -3656,7 +3656,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список своих элементов     [Информационные блоки]"
 	>// Список своих элементов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:iblock.element.add.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Параметры компонента
@@ -3692,7 +3692,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма добавления / редактирования     [Информационный портал]"
 	>// Форма добавления / редактирования&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:infoportal.element.add.form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -3751,7 +3751,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма добавления / редактирования     [Информационные блоки]"
 	>// Форма добавления / редактирования&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:iblock.element.add.form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -3810,7 +3810,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Голосование     [Информационные блоки]"
 	>// Голосование&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:iblock.vote", &#13;
 	".default",           // [.default, ajax, ajax_photo, stars]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3842,7 +3842,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Календарь событий 2.0     [Календарь событий]"
 	>// Календарь событий 2.0 - http://dev.1c-bitrix.ru/user_help/service/calendar/components/calendar_2_0.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:calendar.grid", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3861,7 +3861,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Просмотр события календаря     [Календарь событий]"
 	>// Просмотр события календаря&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:calendar.livefeed.view", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3889,7 +3889,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список событий календаря 2.0     [Календарь событий]"
 	>// Список событий календаря 2.0 - http://dev.1c-bitrix.ru/user_help/service/calendar/components/calendar_events_list.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:calendar.events.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3917,7 +3917,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма редактирования события     [Календарь событий]"
 	>// Форма редактирования события&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:calendar.livefeed.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -3945,7 +3945,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Карта сайта     [Главный модуль]"
 	>// Карта сайта - http://dev.1c-bitrix.ru/user_help/settings/settings/components_2/sitemap/main_map.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.map", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки кеширования
@@ -3974,7 +3974,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Видеотека     [Информационные блоки]"
 	>// Видеотека - http://dev.1c-bitrix.ru/user_help/content/fileman/components_2/media/iblock_tv.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:iblock.tv", &#13;
 	".default",                // [.default, round, section_list]&#13;
 	array(&#13;
 		// region Общие настройки компонента
@@ -4011,7 +4011,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Медиа проигрыватель     [Управление структурой]"
 	>// Медиа проигрыватель - http://dev.1c-bitrix.ru/user_help/content/fileman/components_2/media/player.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:player", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные настройки
@@ -4081,7 +4081,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Яндекс.Карты: настраиваемая карта     [Управление структурой]"
 	>// Яндекс.Карты: настраиваемая карта - http://dev.1c-bitrix.ru/user_help/content/fileman/components_2/yandex_map/map_yandex_view.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:map.yandex.view", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4108,7 +4108,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Яндекс.Карты: поиск по адресу     [Управление структурой]"
 	>// Яндекс.Карты: поиск по адресу - http://dev.1c-bitrix.ru/user_help/content/fileman/components_2/yandex_map/map_yandex_search.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:map.yandex.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4135,7 +4135,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Импорт каталога из 1с     [Торговый каталог]"
 	>// Импорт каталога из 1с&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.import.1c", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4182,7 +4182,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Экспорт каталога в 1с     [Торговый каталог]"
 	>// Экспорт каталога в 1с&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.export.1c", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4207,7 +4207,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Комментарии к товарам     [Информационные блоки]"
 	>// Комментарии к товарам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.comments", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4246,7 +4246,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Кнопки социальных сетей     [Информационные блоки]"
 	>// Кнопки социальных сетей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.socnets.buttons", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4283,7 +4283,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Вакансии     [Корпоративный сайт услуг]"
 	>// Вакансии&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:furniture.vacancies", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки компонента
@@ -4309,7 +4309,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="FAQ     [Информационные блоки]"
 	>// FAQ&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.faq", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки компонента
@@ -4354,7 +4354,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Вопрос FAQ     [Информационные блоки]"
 	>// Вопрос FAQ&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.faq.element.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки компонента
@@ -4392,7 +4392,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список вопросов FAQ из секции     [Информационные блоки]"
 	>// Список вопросов FAQ из секции&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.faq.element.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки компонента
@@ -4430,7 +4430,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список категорий FAQ     [Информационные блоки]"
 	>// Список категорий FAQ&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.faq.section.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки компонента
@@ -4463,7 +4463,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="SOAP&amp;WSDL сервер     [Веб-сервисы]"
 	>// SOAP&amp;WSDL сервер - http://dev.1c-bitrix.ru/user_help/settings/webservice/components_2/webservice_server.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:webservice.server", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4484,7 +4484,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Веб-сервисы модуля статистики     [Веб-сервисы]"
 	>// Веб-сервисы модуля статистики - http://dev.1c-bitrix.ru/user_help/settings/webservice/components_2/webservice_statistic.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:webservice.statistic", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -4500,7 +4500,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Проверка аутентификации     [Веб-сервисы]"
 	>// Проверка аутентификации - http://dev.1c-bitrix.ru/user_help/settings/webservice/components_2/webservice_checkauth.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:webservice.checkauth", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -4516,7 +4516,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Веб-форма     [Веб-формы]"
 	>// Веб-форма - http://dev.1c-bitrix.ru/user_help/service/form/components_2/form.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4579,7 +4579,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Заполнение веб-формы     [Веб-формы]"
 	>// Заполнение веб-формы - http://dev.1c-bitrix.ru/user_help/service/form/components_2/form_result_new.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:form.result.new", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -4620,7 +4620,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Просмотр результата     [Веб-формы]"
 	>// Просмотр результата - http://dev.1c-bitrix.ru/user_help/service/form/components_2/form_result_view.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:form.result.view", &#13;
 	".default",                   // [.default, intranet]&#13;
 	array(&#13;
 		// region Источник данных
@@ -4652,7 +4652,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование результата     [Веб-формы]"
 	>// Редактирование результата - http://dev.1c-bitrix.ru/user_help/service/form/components_2/form_result_edit.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:form.result.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -4688,7 +4688,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список результатов     [Веб-формы]"
 	>// Список результатов - http://dev.1c-bitrix.ru/user_help/service/form/components_2/form_result_list.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:form.result.list", &#13;
 	".default",              // [.default, intranet]&#13;
 	array(&#13;
 		// region Источник данных
@@ -4723,7 +4723,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список своих результатов     [Веб-формы]"
 	>// Список своих результатов - http://dev.1c-bitrix.ru/user_help/service/form/components_2/form_result_list_my.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:form.result.list.my", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4748,7 +4748,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Идеи     [Менеджер идей]"
 	>// Идеи&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:idea", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4833,7 +4833,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма добавлении идеи (popup)     [Менеджер идей]"
 	>// Форма добавлении идеи (popup)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:idea.popup", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4873,7 +4873,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Учебный курс     [Обучение]"
 	>// Учебный курс&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.course", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4932,7 +4932,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Все материалы курса     [Обучение]"
 	>// Все материалы курса&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.course.contents", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4960,7 +4960,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Дерево курса     [Обучение]"
 	>// Дерево курса&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.course.tree", &#13;
 	".default",                    // [.default, navigation]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -4991,7 +4991,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Детальный вывод курса     [Обучение]"
 	>// Детальный вывод курса&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.course.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5019,7 +5019,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список курсов     [Обучение]"
 	>// Список курсов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.course.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -5045,7 +5045,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск по курсам     [Обучение]"
 	>// Поиск по курсам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -5068,7 +5068,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Журнал студента     [Обучение]"
 	>// Журнал студента&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.student.gradebook", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -5092,7 +5092,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Отчет по курсам     [Обучение]"
 	>// Отчет по курсам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.student.certificates", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -5115,7 +5115,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Профиль студента     [Обучение]"
 	>// Профиль студента&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.student.profile", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -5137,7 +5137,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Резюме студента     [Обучение]"
 	>// Резюме студента&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.student.transcript", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5160,7 +5160,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Контрольный тест     [Обучение]"
 	>// Контрольный тест&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.test", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5189,7 +5189,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Самопроверка     [Обучение]"
 	>// Самопроверка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.test.self", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5218,7 +5218,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список тестов     [Обучение]"
 	>// Список тестов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.test.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5245,7 +5245,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Детальный вывод главы     [Обучение]"
 	>// Детальный вывод главы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.chapter.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5279,7 +5279,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Детальный вывод урока     [Обучение]"
 	>// Детальный вывод урока&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:learning.lesson.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5312,7 +5312,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Текущий опрос     [Опросы, голосования]"
 	>// Текущий опрос&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:voting.current", &#13;
 	".default",                   // [.default, .userfield, light, main_page, main_page.blue, main_page.green, with_description]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5345,7 +5345,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Результаты опроса     [Опросы, голосования]"
 	>// Результаты опроса&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:voting.result", &#13;
 	".default",             // [.default, main_page, main_page.blue, main_page.green, with_description]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5370,7 +5370,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список опросов     [Опросы, голосования]"
 	>// Список опросов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:voting.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5393,7 +5393,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма опроса     [Опросы, голосования]"
 	>// Форма опроса&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:voting.form", &#13;
 	".default",                 // [.default, main_page, with_description]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5420,7 +5420,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список новостей     [Подписка, рассылки]"
 	>// Список новостей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:subscribe.news", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -5443,7 +5443,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Страница рассылок     [Подписка, рассылки]"
 	>// Страница рассылок&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:subscribe.index", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -5474,7 +5474,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Страница редактирования подписки     [Подписка, рассылки]"
 	>// Страница редактирования подписки&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:subscribe.edit", &#13;
 	".default",                   // [.default, clear]&#13;
 	array(&#13;
 		// region Источник данных
@@ -5510,7 +5510,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Упрощенное редактирование подписки     [Подписка, рассылки]"
 	>// Упрощенное редактирование подписки&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:subscribe.simple", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -5544,7 +5544,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма подписки     [Подписка, рассылки]"
 	>// Форма подписки&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:subscribe.form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5599,7 +5599,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Техподдержка     [Техподдержка]"
 	>// Техподдержка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.ticket", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Управление адресами страниц
@@ -5631,7 +5631,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Техподдержка с мастером     [Техподдержка]"
 	>// Техподдержка с мастером&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.wizard", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5678,7 +5678,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Создание нового, либо редактирование существующего обращения     [Техподдержка]"
 	>// Создание нового, либо редактирование существующего обращения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.ticket.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5707,7 +5707,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список обращений     [Техподдержка]"
 	>// Список обращений&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:support.ticket.list", &#13;
 	".default",                 // [.default, gadget]&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -5731,7 +5731,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Мастер создания обращения     [Техподдержка]"
 	>// Мастер создания обращения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:iblock.wizard", &#13;
 	".default",                      // [.default, standard]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5770,7 +5770,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Бизнес-процесс     [Бизнес-процессы]"
 	>// Бизнес-процесс&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:bizproc.wizards", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5818,7 +5818,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Блоги     [Блоги]"
 	>// Блоги - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog", &#13;
 	".default",                                 // [.default, general_page, general_page_old_version, old_version, one_blog, one_blog_old_version, one_blog_with_main_page]&#13;
 	array(&#13;
 		// region Внешний вид
@@ -5914,7 +5914,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщения блога     [Блоги]"
 	>// Сообщения блога - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog_blog.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.blog", &#13;
 	".default",                  // [.default, old_version]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -5974,7 +5974,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Черновики сообщений блога     [Блоги]"
 	>// Черновики сообщений блога - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog_blog_draft.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.blog.draft", &#13;
 	".default",                  // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6012,7 +6012,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Неопубликованные сообщения блога     [Блоги]"
 	>// Неопубликованные сообщения блога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.blog.moderation", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -6050,7 +6050,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Лента друзей     [Блоги]"
 	>// Лента друзей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.friends", &#13;
 	".default",                  // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6094,7 +6094,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Последние сообщения всех блогов     [Блоги]"
 	>// Последние сообщения всех блогов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.new_posts.list", &#13;
 	".default",                    // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6148,7 +6148,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщение детально     [Блоги]"
 	>// Сообщение детально&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.post", &#13;
 	".default",                  // [.default, micro, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6199,7 +6199,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Комментарии к сообщению     [Блоги]"
 	>// Комментарии к сообщению&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.post.comment", &#13;
 	".default",                         // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6258,7 +6258,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Новые блоги     [Блоги]"
 	>// Новые блоги&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.new_blogs", &#13;
 	".default",               // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6303,7 +6303,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Популярные блоги     [Блоги]"
 	>// Популярные блоги&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.popular_blogs", &#13;
 	".default",               // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6349,7 +6349,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Новые сообщения     [Блоги]"
 	>// Новые сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.new_posts", &#13;
 	".default",                    // [.default, main_page, old_version, profile_page]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6397,7 +6397,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Популярные сообщения     [Блоги]"
 	>// Популярные сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.popular_posts", &#13;
 	".default",                    // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6447,7 +6447,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Комментируемые сообщения     [Блоги]"
 	>// Комментируемые сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.commented_posts", &#13;
 	".default",                    // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6495,7 +6495,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Новые комментарии     [Блоги]"
 	>// Новые комментарии&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.new_comments", &#13;
 	".default",                    // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6540,7 +6540,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Группы блогов     [Блоги]"
 	>// Группы блогов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.groups", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -6578,7 +6578,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Блоги группы     [Блоги]"
 	>// Блоги группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.group.blog", &#13;
 	".default",                    // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6622,7 +6622,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование блога     [Блоги]"
 	>// Редактирование блога - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog_blog_edit.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.blog.edit", &#13;
 	".default",              // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6653,7 +6653,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование сообщения     [Блоги]"
 	>// Редактирование сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.post.edit", &#13;
 	".default",                  // [.default, micro, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6703,7 +6703,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Информация о блоге     [Блоги]"
 	>// Информация о блоге&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.info", &#13;
 	".default",                  // [.default, avatar, old_version]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -6743,7 +6743,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню блогов     [Блоги]"
 	>// Меню блогов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.menu", &#13;
 	".default",                  // [.default, blog_settings, old_version, settings]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6783,7 +6783,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Календарь     [Блоги]"
 	>// Календарь - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog_calendar.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.calendar", &#13;
 	".default",         // [.default, old_version]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -6819,7 +6819,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Теги блога     [Блоги]"
 	>// Теги блога - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog_category.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.category", &#13;
 	".default",      // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6841,7 +6841,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Лучшие сообщения блога     [Блоги]"
 	>// Лучшие сообщения блога - http://dev.1c-bitrix.ru/user_help/service/blogs/components_2/blog_blog_favorite.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.blog.favorite", &#13;
 	".default",             // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -6884,7 +6884,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="RSS блога     [Блоги]"
 	>// RSS блога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.rss", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -6927,7 +6927,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="RSS блогов по группам/сайтам     [Блоги]"
 	>// RSS блогов по группам/сайтам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.rss.all", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -6967,7 +6967,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Ссылки на RSS блога     [Блоги]"
 	>// Ссылки на RSS блога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.rss.link", &#13;
 	".default",            // [.default, group, mainpage, vertical]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -7003,7 +7003,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск по блогам     [Блоги]"
 	>// Поиск по блогам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.search", &#13;
 	".default",              // [.default, form, old_version]&#13;
 	array(&#13;
 		// region Внешний вид
@@ -7039,7 +7039,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Профиль пользователя     [Блоги]"
 	>// Профиль пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.user", &#13;
 	".default",              // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -7076,7 +7076,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Группы пользователей блога     [Блоги]"
 	>// Группы пользователей блога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.user.group", &#13;
 	".default",      // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -7098,7 +7098,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настройка пользователей блога     [Блоги]"
 	>// Настройка пользователей блога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.user.settings", &#13;
 	".default",                       // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -7129,7 +7129,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настройка прав пользователя блога     [Блоги]"
 	>// Настройка прав пользователя блога&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.user.settings.edit", &#13;
 	".default",                  // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -7161,7 +7161,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Получение данных в формате metaWeblog     [Блоги]"
 	>// Получение данных в формате metaWeblog&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.metaweblog", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -7177,7 +7177,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Trackbackи сообщения     [Блоги]"
 	>// Trackbackи сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.post.trackback", &#13;
 	".default",              // [.default, old_version]&#13;
 	array(&#13;
 		// region Источник данных
@@ -7213,7 +7213,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Получение Trackbackов к сообщению     [Блоги]"
 	>// Получение Trackbackов к сообщению&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:blog.post.trackback.get", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -7241,7 +7241,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Социальная сеть     [Социальная сеть]"
 	>// Социальная сеть&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -7456,7 +7456,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Социальная сеть - группы     [Социальная сеть]"
 	>// Социальная сеть - группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork_group", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -7627,7 +7627,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Социальная сеть - пользователь     [Социальная сеть]"
 	>// Социальная сеть - пользователь&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork_user", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -7814,7 +7814,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню сообщений     [Социальная сеть]"
 	>// Меню сообщений&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.menu", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -7844,7 +7844,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список последних тем     [Социальная сеть]"
 	>// Список последних тем&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.forum.topic.last", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -7875,7 +7875,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Тема (создание)     [Социальная сеть]"
 	>// Тема (создание)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.forum.topic.new", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -7915,7 +7915,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Тема (чтение)     [Социальная сеть]"
 	>// Тема (чтение)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.forum.topic.read", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -7967,7 +7967,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Темы (список)     [Социальная сеть]"
 	>// Темы (список)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.forum.topic.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -8012,7 +8012,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма ввода пользователей     [Социальная сеть]"
 	>// Форма ввода пользователей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_search_input", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -8034,7 +8034,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма создания сообщения     [Социальная сеть]"
 	>// Форма создания сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.forum.post_form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -8075,7 +8075,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщения     [Социальная сеть]"
 	>// Сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.blog", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -8134,7 +8134,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщения - модерация     [Социальная сеть]"
 	>// Сообщения - модерация&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.moderation", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -8184,7 +8184,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Черновики сообщений     [Социальная сеть]"
 	>// Черновики сообщений&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.draft", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -8234,7 +8234,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщение детально     [Социальная сеть]"
 	>// Сообщение детально&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.post", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8282,7 +8282,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Комментарии к сообщению     [Социальная сеть]"
 	>// Комментарии к сообщению&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.post.comment", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8331,7 +8331,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Профиль группы     [Социальная сеть]"
 	>// Профиль группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group", &#13;
 	".default",                         // [.default, short]&#13;
 	array(&#13;
 		// region Источник данных
@@ -8383,7 +8383,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Профиль пользователя     [Социальная сеть]"
 	>// Профиль пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_profile", &#13;
 	".default",                            // [.default, short]&#13;
 	array(&#13;
 		// region Источник данных
@@ -8446,7 +8446,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Профиль пользователя     [Социальная сеть]"
 	>// Профиль пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_profile_edit", &#13;
 	".default",              // [.default, .default_old]&#13;
 	array(&#13;
 		// region Источник данных
@@ -8482,7 +8482,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Top групп     [Социальная сеть]"
 	>// Top групп&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_top", &#13;
 	".default",                      // [.default, div]&#13;
 	array(&#13;
 		// region Внешний вид
@@ -8522,7 +8522,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Бизнес-процессы     [Социальная сеть]"
 	>// Бизнес-процессы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.bizproc", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -8549,7 +8549,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Входящие сообщения     [Социальная сеть]"
 	>// Входящие сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_input", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8587,7 +8587,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Выход из группы     [Социальная сеть]"
 	>// Выход из группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_leave_group", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8619,7 +8619,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Группы пользователя     [Социальная сеть]"
 	>// Группы пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_groups", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8661,7 +8661,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Дни рождения друзей     [Социальная сеть]"
 	>// Дни рождения друзей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_birthday", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8690,7 +8690,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Добавление друга     [Социальная сеть]"
 	>// Добавление друга&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_friends_add", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8720,7 +8720,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Друзья пользователя     [Социальная сеть]"
 	>// Друзья пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_friends", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8757,7 +8757,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Запрос пользователя на вступление в группу     [Социальная сеть]"
 	>// Запрос пользователя на вступление в группу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_request_group", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8790,7 +8790,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Запросы на вступление в группу     [Социальная сеть]"
 	>// Запросы на вступление в группу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_requests", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8827,7 +8827,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Запросы на вступление в группу     [Социальная сеть]"
 	>// Запросы на вступление в группу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_requests.ex", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8866,7 +8866,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Запросы пользователю     [Социальная сеть]"
 	>// Запросы пользователю&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_requests", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -8897,7 +8897,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Исходящие сообщения     [Социальная сеть]"
 	>// Исходящие сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_output", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -8933,7 +8933,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Лог активности пользователя     [Социальная сеть]"
 	>// Лог активности пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.activity", &#13;
 	".default",          // [.default, main, short]&#13;
 	array(&#13;
 		// region Источник данных
@@ -8964,7 +8964,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Лог изменений     [Социальная сеть]"
 	>// Лог изменений&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.log.ex", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9000,7 +9000,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Лог изменений     [Социальная сеть]"
 	>// Лог изменений&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.log.entry", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9036,7 +9036,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню профайла группы     [Социальная сеть]"
 	>// Меню профайла группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_menu", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9074,7 +9074,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню профайла пользователя     [Социальная сеть]"
 	>// Меню профайла пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_menu", &#13;
 	".default",                        // [.default, tab]&#13;
 	array(&#13;
 		// region Источник данных
@@ -9115,7 +9115,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню сообщений пользователя     [Социальная сеть]"
 	>// Меню сообщений пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_menu", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9147,7 +9147,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Модераторы группы     [Социальная сеть]"
 	>// Модераторы группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_mods", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9184,7 +9184,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настройка разрешений пользователя     [Социальная сеть]"
 	>// Настройка разрешений пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_settings_edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9215,7 +9215,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настройка функционала     [Социальная сеть]"
 	>// Настройка функционала&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.features", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9249,7 +9249,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Обработка задания Бизнес-процесса     [Социальная сеть]"
 	>// Обработка задания Бизнес-процесса&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.bizproc_edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9279,7 +9279,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Переписка в виде чата     [Социальная сеть]"
 	>// Переписка в виде чата&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_chat", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9310,7 +9310,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Переписка с пользователем     [Социальная сеть]"
 	>// Переписка с пользователем&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_users_messages", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9349,7 +9349,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Переписка с пользователями     [Социальная сеть]"
 	>// Переписка с пользователями&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.messages_users", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9386,7 +9386,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подписка     [Социальная сеть]"
 	>// Подписка&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.subscribe", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9421,7 +9421,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск групп     [Социальная сеть]"
 	>// Поиск групп&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9458,7 +9458,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск пользователей     [Социальная сеть]"
 	>// Поиск пользователей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -9514,7 +9514,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Показ событий     [Социальная сеть]"
 	>// Показ событий&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.events", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9547,7 +9547,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Показ событий (ajax)     [Социальная сеть]"
 	>// Показ событий (ajax)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.events_dyn", &#13;
 	".default",                      // [.default, popup]&#13;
 	array(&#13;
 		// region Внешний вид
@@ -9586,7 +9586,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователи группы     [Социальная сеть]"
 	>// Пользователи группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_users", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9623,7 +9623,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователи группы (расширенный)     [Социальная сеть]"
 	>// Пользователи группы (расширенный)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_friends.ex", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9660,7 +9660,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователи группы (расширенный)     [Социальная сеть]"
 	>// Пользователи группы (расширенный)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_users.ex", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9700,7 +9700,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Попап-диалога для создания и изменения группы     [Социальная сеть]"
 	>// Попап-диалога для создания и изменения группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_create.popup", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -9716,7 +9716,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Приглашение пользователей в группу     [Социальная сеть]"
 	>// Приглашение пользователей в группу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_request_search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9752,7 +9752,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Приглашения и запросы пользователя     [Социальная сеть]"
 	>// Приглашения и запросы пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_requests.ex", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -9783,7 +9783,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Приглашения на вступление в группу     [Социальная сеть]"
 	>// Приглашения на вступление в группу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_requests_out", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9819,7 +9819,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Создание группы     [Социальная сеть]"
 	>// Создание группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_create", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9854,7 +9854,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Создание группы в попап-диалоге     [Социальная сеть]"
 	>// Создание группы в попап-диалоге&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group.iframe.popup", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -9870,7 +9870,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Создание группы в попап-диалоге     [Социальная сеть]"
 	>// Создание группы в попап-диалоге&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_create.ex", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -9886,7 +9886,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список подписки пользователя     [Социальная сеть]"
 	>// Список подписки пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.subscribe_list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9923,7 +9923,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Удаление группы     [Социальная сеть]"
 	>// Удаление группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_delete", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9955,7 +9955,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Удаление друга     [Социальная сеть]"
 	>// Удаление друга&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_friends_delete", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -9985,7 +9985,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма отправки сообщения     [Социальная сеть]"
 	>// Форма отправки сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.message_form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -10019,7 +10019,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма приглашения пользователя вступить в группу     [Социальная сеть]"
 	>// Форма приглашения пользователя вступить в группу&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_request_user", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -10052,7 +10052,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Черный список группы     [Социальная сеть]"
 	>// Черный список группы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.group_ban", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -10089,7 +10089,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Черный список пользователя     [Социальная сеть]"
 	>// Черный список пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.user_ban", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -10119,7 +10119,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование сообщения     [Социальная сеть]"
 	>// Редактирование сообщения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.post.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -10161,7 +10161,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="RSS блогов     [Социальная сеть]"
 	>// RSS блогов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socialnetwork.blog.rss", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -10202,7 +10202,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="PM (изменение)     [Форум]"
 	>// PM (изменение) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_pm_edit.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.pm.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10243,7 +10243,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="PM (папки)     [Форум]"
 	>// PM (папки) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_pm_folder.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.pm.folder", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -10274,7 +10274,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="PM (поиск)     [Форум]"
 	>// PM (поиск) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_pm_search.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.pm.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -10295,7 +10295,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="PM (список)     [Форум]"
 	>// PM (список) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_pm_list.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.pm.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10335,7 +10335,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="PM (чтение)     [Форум]"
 	>// PM (чтение) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_pm_read.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.pm.read", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10371,7 +10371,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форум. Комплексный компонент     [Форум]"
 	>// Форум. Комплексный компонент - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_composite.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum", &#13;
 	".default",                           // [.default, old]&#13;
 	array(&#13;
 		// region Настройки поиска
@@ -10472,7 +10472,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Комментарии     [Форум]"
 	>// Комментарии&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.comments", &#13;
 	".default",                       // [.default, bitrix24]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10533,7 +10533,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Письмо     [Форум]"
 	>// Письмо - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_message_send.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.message.send", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10561,7 +10561,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подписка (список)     [Форум]"
 	>// Подписка (список)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.subscribe.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10595,7 +10595,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск     [Форум]"
 	>// Поиск&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
@@ -10634,7 +10634,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователь (изменение профиля)     [Форум]"
 	>// Пользователь (изменение профиля)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.user.profile.edit", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10666,7 +10666,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователь (профиль)     [Форум]"
 	>// Пользователь (профиль)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.user.profile.view", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10716,7 +10716,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователь (сообщения)     [Форум]"
 	>// Пользователь (сообщения)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.user.post", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10761,7 +10761,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пользователь (список пользователей)     [Форум]"
 	>// Пользователь (список пользователей)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.user.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10799,7 +10799,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Помощь     [Форум]"
 	>// Помощь - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_help.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.help", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10825,7 +10825,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Правила     [Форум]"
 	>// Правила&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.rules", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10851,7 +10851,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщения (перемещение)     [Форум]"
 	>// Сообщения (перемещение) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_message_move.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.message.move", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10894,7 +10894,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Сообщения (проверка)     [Форум]"
 	>// Сообщения (проверка) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_message_approve.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.message.approve", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10942,7 +10942,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Статистика     [Форум]"
 	>// Статистика&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.statistic", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -10977,7 +10977,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Тема (отзывы)     [Форум]"
 	>// Тема (отзывы)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.reviews", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11023,7 +11023,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Тема (создание)     [Форум]"
 	>// Тема (создание)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.new", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11065,7 +11065,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Тема (чтение)     [Форум]"
 	>// Тема (чтение)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.read", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11127,7 +11127,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Темы (новые)     [Форум]"
 	>// Темы (новые)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.active", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11172,7 +11172,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Темы (перемещение)     [Форум]"
 	>// Темы (перемещение)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.move", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11210,7 +11210,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Темы (поиск)     [Форум]"
 	>// Темы (поиск)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.search", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -11239,7 +11239,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Темы (список внешний)     [Форум]"
 	>// Темы (список внешний)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.last", &#13;
 	".default",                       // [.default, main_page]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11282,7 +11282,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Темы (список)     [Форум]"
 	>// Темы (список)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.topic.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11332,7 +11332,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма создания сообщения     [Форум]"
 	>// Форма создания сообщения - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_post_form.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.post_form", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11372,7 +11372,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форумы (список)     [Форум]"
 	>// Форумы (список) - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_index.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.index", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11421,7 +11421,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Шаблоны     [Форум]"
 	>// Шаблоны - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_menu.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.interface", &#13;
 	".default",  // [.default, filter_simple, popup, popup_image, show_file, spoiler, table]&#13;
 	array(&#13;
 
@@ -11437,7 +11437,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="RSS форума     [Форум]"
 	>// RSS форума - http://dev.1c-bitrix.ru/user_help/service/forum/components_2/forum_rss.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:forum.rss", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11479,7 +11479,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Аффилиатские планы     [Интернет-магазин]"
 	>// Аффилиатские планы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.affiliate.plans", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11498,7 +11498,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Отчет аффилиата     [Интернет-магазин]"
 	>// Отчет аффилиата&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.affiliate.account", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11518,7 +11518,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Отчет по программе аффилиата     [Интернет-магазин]"
 	>// Отчет по программе аффилиата&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.affiliate.report", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11538,7 +11538,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Регистрация аффилиата     [Интернет-магазин]"
 	>// Регистрация аффилиата&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.affiliate.register", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11561,7 +11561,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Технические инструкции аффилиата     [Интернет-магазин]"
 	>// Технические инструкции аффилиата&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.affiliate.instructions", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11586,7 +11586,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Корзина     [Интернет-магазин]"
 	>// Корзина&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.basket.basket", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Внешний вид
@@ -11615,7 +11615,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Малая корзина     [Интернет-магазин]"
 	>// Малая корзина&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.basket.basket.small", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11638,7 +11638,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Ссылка на корзину     [Интернет-магазин]"
 	>// Ссылка на корзину&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.basket.basket.line", &#13;
 	".default",               // [eshop_adapt, .default]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11675,7 +11675,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Добавление средств на счет текущего пользователя     [Интернет-магазин]"
 	>// Добавление средств на счет текущего пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.account.pay", &#13;
 	".default",                     // [.default, text_view]&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11700,7 +11700,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Заказы пользователя     [Интернет-магазин]"
 	>// Заказы пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.order", &#13;
 	".default",                     // [.default, list]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11746,7 +11746,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Накопительные программы     [Торговый каталог]"
 	>// Накопительные программы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.discsave.info", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11769,7 +11769,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Отмена заказа     [Интернет-магазин]"
 	>// Отмена заказа&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.order.cancel", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11791,7 +11791,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Отмена подписки     [Интернет-магазин]"
 	>// Отмена подписки&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.subscribe.cancel", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11812,7 +11812,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пластиковые карты пользователя     [Интернет-магазин]"
 	>// Пластиковые карты пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.cc", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Управление адресами страниц
@@ -11838,7 +11838,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подписки пользователя     [Интернет-магазин]"
 	>// Подписки пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.subscribe", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Управление адресами страниц
@@ -11864,7 +11864,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подробная информация о заказе     [Интернет-магазин]"
 	>// Подробная информация о заказе&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.order.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -11904,7 +11904,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Профили пользователя     [Интернет-магазин]"
 	>// Профили пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.profile", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Управление адресами страниц
@@ -11931,7 +11931,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование пластиковых карт     [Интернет-магазин]"
 	>// Редактирование пластиковых карт&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.cc.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11952,7 +11952,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Редактирование профиля     [Интернет-магазин]"
 	>// Редактирование профиля&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.profile.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -11975,7 +11975,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список заказов     [Интернет-магазин]"
 	>// Список заказов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.order.list", &#13;
 	".default",               // [.default, list]&#13;
 	array(&#13;
 		// region Внешний вид
@@ -12012,7 +12012,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список пластиковых карт текущего пользователя     [Интернет-магазин]"
 	>// Список пластиковых карт текущего пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.cc.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -12033,7 +12033,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список подписок текущего пользователя     [Интернет-магазин]"
 	>// Список подписок текущего пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.subscribe.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -12054,7 +12054,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список профилей текущего пользователя     [Интернет-магазин]"
 	>// Список профилей текущего пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.profile.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -12075,7 +12075,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Счета текущего пользователя     [Интернет-магазин]"
 	>// Счета текущего пользователя&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.personal.account", &#13;
 	".default",      // [mobile, .default]&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -12094,7 +12094,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="AJAX-местоположения "
 	>// AJAX-местоположения&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.ajax.locations", &#13;
 	".default",               // [.default, popup]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12120,7 +12120,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Калькулятор доставки (AJAX) "
 	>// Калькулятор доставки (AJAX)&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.ajax.delivery.calculator", &#13;
 	".default",  // [mobile, .default, input]&#13;
 	array(&#13;
 
@@ -12136,7 +12136,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Корзина пользователя с оформлением "
 	>// Корзина пользователя с оформлением&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.basket.order.ajax", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12169,7 +12169,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Одношаговое оформление заказа "
 	>// Одношаговое оформление заказа&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.order.ajax", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12208,7 +12208,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подключение обработчика результата платежной системы     [Интернет-магазин]"
 	>// Подключение обработчика результата платежной системы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.order.payment.receive", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12228,7 +12228,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подключение платежной системы     [Интернет-магазин]"
 	>// Подключение платежной системы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.order.payment", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -12244,7 +12244,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Процедура оформления заказа     [Интернет-магазин]"
 	>// Процедура оформления заказа&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.order.full", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12283,7 +12283,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Экспорт заказов в 1С:Предприятие     [Интернет-магазин]"
 	>// Экспорт заказов в 1С:Предприятие&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.export.1c", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12314,7 +12314,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Просмотренные товары     [Торговый каталог]"
 	>// Просмотренные товары&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.viewed.products", &#13;
 	".default",                       // [.default, vertical]&#13;
 	array(&#13;
 		// region Источник данных
@@ -12388,7 +12388,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Рекомендуемые товары     [Торговый каталог]"
 	>// Рекомендуемые товары&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.recommended.products", &#13;
 	".default",                       // [.default, vertical]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12464,7 +12464,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Самые продаваемые товары     [Интернет-магазин]"
 	>// Самые продаваемые товары&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.bestsellers", &#13;
 	".default",                       // [.default, vertical]&#13;
 	array(&#13;
 		// region Источник данных
@@ -12545,7 +12545,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="С этим товаром покупают     [Интернет-магазин]"
 	>// С этим товаром покупают&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.recommended.products", &#13;
 	".default",                       // [.default, vertical]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12619,7 +12619,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подписка на товары     [Интернет-магазин]"
 	>// Подписка на товары&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:sale.notice.product", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12640,7 +12640,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Склады     [Торговый каталог]"
 	>// Склады&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.store", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Управление адресами страниц
@@ -12674,7 +12674,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Список складов     [Торговый каталог]"
 	>// Список складов&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.store.list", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки кеширования
@@ -12704,7 +12704,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Информация о складе     [Торговый каталог]"
 	>// Информация о складе&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.store.detail", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки кеширования
@@ -12730,7 +12730,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Остатки по складам     [Торговый каталог]"
 	>// Остатки по складам&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:catalog.store.amount", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12766,7 +12766,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Подключение устройства OTP     [Проактивная защита]"
 	>// Подключение устройства OTP&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:security.user.otp.init", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12785,7 +12785,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Резервные коды OTP     [Проактивная защита]"
 	>// Резервные коды OTP&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:security.user.recovery.codes", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -12801,7 +12801,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Вставка включаемой области     [Главный модуль]"
 	>// Вставка включаемой области - http://dev.1c-bitrix.ru/user_help/settings/settings/components_2/include_areas/main_include.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.include", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Параметры компонента
@@ -12822,7 +12822,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Выбор сайта     [Главный модуль]"
 	>// Выбор сайта - http://dev.1c-bitrix.ru/user_help/settings/settings/components_2/navigation/main_site_selector.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.site.selector", &#13;
 	".default",        // [.default, dropdown]&#13;
 	array(&#13;
 		// region Источник данных
@@ -12846,7 +12846,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню     [Главный модуль]"
 	>// Меню - http://dev.1c-bitrix.ru/user_help/settings/settings/components_2/navigation/menu.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:menu", &#13;
 	".default",                  // [bottom_menu, catalog_native, top_menu, .default, blue_tabs, catalog_horizontal, catalog_vertical, grey_tabs, horizontal_multilevel, tree, vertical_multilevel]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12878,7 +12878,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Меню для мобильной платформы     [Мобильная платформа]"
 	>// Меню для мобильной платформы&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:mobileapp.menu", &#13;
 	".default",  // [mobile, .default]&#13;
 	array(&#13;
 
@@ -12894,7 +12894,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Навигационная цепочка     [Главный модуль]"
 	>// Навигационная цепочка - http://dev.1c-bitrix.ru/user_help/settings/settings/components_2/navigation/breadcrumb.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:breadcrumb", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -12915,7 +12915,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пункты меню     [Информационные блоки]"
 	>// Пункты меню - http://dev.1c-bitrix.ru/user_help/settings/settings/components_2/navigation/menu_section.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:menu.sections", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12946,7 +12946,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Облако тегов     [Поиск]"
 	>// Облако тегов - http://dev.1c-bitrix.ru/user_help/settings/search/components_2/search_tags_cloud.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:search.tags.cloud", &#13;
 	".default",          // [.default, gadget]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -12979,7 +12979,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поиск по заголовкам     [Поиск]"
 	>// Поиск по заголовкам - http://dev.1c-bitrix.ru/user_help/settings/search/components_2/search_title.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:search.title", &#13;
 	".default",               // [mobile, .default, catalog, visual]&#13;
 	array(&#13;
 		// region Основные параметры
@@ -13010,7 +13010,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Поле ввода поискового запроса     [Поиск]"
 	>// Поле ввода поискового запроса - http://dev.1c-bitrix.ru/user_help/settings/search/components_2/search_suggest_input.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:search.suggest.input", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -13032,7 +13032,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Стандартная страница поиска     [Поиск]"
 	>// Стандартная страница поиска - http://dev.1c-bitrix.ru/user_help/settings/search/components_2/search_page.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:search.page", &#13;
 	".default",                   // [.default, clear, icons, suggest, tags]&#13;
 	array(&#13;
 		// region Источник данных
@@ -13085,7 +13085,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма ввода тегов     [Поиск]"
 	>// Форма ввода тегов - http://dev.1c-bitrix.ru/user_help/settings/search/components_2/search_tags_input.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:search.tags.input", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -13109,7 +13109,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма поиска     [Поиск]"
 	>// Форма поиска - http://dev.1c-bitrix.ru/user_help/settings/search/components_2/search_form.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:search.form", &#13;
 	".default",  // [.default, flat, suggest]&#13;
 	array(&#13;
 		// region Шаблоны ссылок
@@ -13128,7 +13128,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Имя пользователя с тултипом     [Главный модуль]"
 	>// Имя пользователя с тултипом - http://dev.1c-bitrix.ru/user_help/settings/users/components_2/main_user_link.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.user.link", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -13167,7 +13167,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Настраиваемая регистрация     [Главный модуль]"
 	>// Настраиваемая регистрация - http://dev.1c-bitrix.ru/user_help/settings/users/components_2/main_register.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.register", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
@@ -13194,7 +13194,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Параметры пользователя     [Главный модуль]"
 	>// Параметры пользователя - http://dev.1c-bitrix.ru/user_help/settings/users/components_2/main_profile.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.profile", &#13;
 	".default",                   // [eshop_adapt, .default]&#13;
 	array(&#13;
 		// region Управление режимом AJAX
@@ -13223,7 +13223,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Пароли приложений     [Главный модуль]"
 	>// Пароли приложений&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:main.app.passwords", &#13;
 	".default",&#13;
 	array(&#13;
 
@@ -13239,7 +13239,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Управление объединением профилей     [Социальные сервисы]"
 	>// Управление объединением профилей&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:socserv.auth.split", &#13;
 	".default",          // [.default, network, twitpost]&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -13259,7 +13259,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма авторизации     [Главный модуль]"
 	>// Форма авторизации - http://dev.1c-bitrix.ru/user_help/settings/users/components_2/system_auth_form.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:system.auth.form", &#13;
 	".default",                // [eshop_adapt, eshop_adapt_auth, .default]&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -13281,7 +13281,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма инициализации регистрации     [Главный модуль]"
 	>// Форма инициализации регистрации&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:system.auth.initialize", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -13301,7 +13301,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Форма подтверждения регистрации     [Главный модуль]"
 	>// Форма подтверждения регистрации - http://dev.1c-bitrix.ru/user_help/settings/users/components_2/system_auth_confirmation.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:system.auth.confirmation", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Дополнительные настройки
@@ -13322,7 +13322,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		description="Таблица статистики     [Веб-аналитика]"
 	>// Таблица статистики - http://dev.1c-bitrix.ru/user_help/statistic/components_2/statistic_table.php&#13;
 $$APPLICATION-&gt;IncludeComponent(&#13;
-	"bitrix:advertising.banner", &#13;
+	"bitrix:statistic.table", &#13;
 	".default",&#13;
 	array(&#13;
 		// region Настройки кеширования
