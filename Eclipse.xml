@@ -298,7 +298,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                      =&gt;  "news",              // Тип информационного блока (используется только для проверки) : array ( '-' =&gt; ' ', 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
-		"IBLOCK_ID"                        =&gt;  "={$_REQUEST[ID]}",  // Код информационного блока : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
+		"IBLOCK_ID"                        =&gt;  "={$$_REQUEST[ID]}",  // Код информационного блока : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
 		"NEWS_COUNT"                       =&gt;  "20",                // Количество новостей на странице &#13;
 		// endregion
 		// region Источник данных
@@ -372,7 +372,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "news",                      // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                  =&gt;  "",                          // Код информационного блока : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
-		"ELEMENT_ID"                 =&gt;  "={$_REQUEST[ELEMENT_ID]}",  // ID новости &#13;
+		"ELEMENT_ID"                 =&gt;  "={$$_REQUEST[ELEMENT_ID]}",  // ID новости &#13;
 		"ELEMENT_CODE"               =&gt;  "",                          // Код новости &#13;
 		// endregion
 		// region Источник данных
@@ -476,7 +476,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"             =&gt;  "news",              // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
-		"IBLOCK_ID"               =&gt;  "={$_REQUEST[ID]}",  // Код информационного блока : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
+		"IBLOCK_ID"               =&gt;  "={$$_REQUEST[ID]}",  // Код информационного блока : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
 		"MONTH_VAR_NAME"          =&gt;  "month",             // Имя переменной для месяца &#13;
 		"YEAR_VAR_NAME"           =&gt;  "year",              // Имя переменной для года &#13;
 		"WEEK_START"              =&gt;  "1",                 // Начало недели : array ( 0 =&gt; 'Воскресенье', 1 =&gt; 'Понедельник', 2 =&gt; 'Вторник', 3 =&gt; 'Среда', 4 =&gt; 'Четверг', 5 =&gt; 'Пятница', 6 =&gt; 'Суббота', )&#13;
@@ -714,7 +714,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                      =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                        =&gt;  "",                          // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                       =&gt;  "={$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
+		"SECTION_ID"                       =&gt;  "={$$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
 		"SECTION_CODE"                     =&gt;  "",                          // Код раздела &#13;
 		// endregion
 		// region Источник данных
@@ -784,8 +784,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"             =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"               =&gt;  "",                          // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"              =&gt;  "={$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
-		"ELEMENT_ID"              =&gt;  "={$_REQUEST[ELEMENT_ID]}",  // ID элемента &#13;
+		"SECTION_ID"              =&gt;  "={$$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
+		"ELEMENT_ID"              =&gt;  "={$$_REQUEST[ELEMENT_ID]}",  // ID элемента &#13;
 		"SECTION_CODE"            =&gt;  "",                          // Код раздела &#13;
 		"ELEMENT_CODE"            =&gt;  "",                          // Код элемента &#13;
 		// endregion
@@ -1055,7 +1055,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"              =&gt;  "",                                                                    // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                =&gt;  "",                                                                    // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"               =&gt;  "={$_REQUEST[SECTION_ID]}",                                            // ID раздела &#13;
+		"SECTION_ID"               =&gt;  "={$$_REQUEST[SECTION_ID]}",                                            // ID раздела &#13;
 		"SECTION_CODE"             =&gt;  "",                                                                    // Код раздела &#13;
 		"USER_ALIAS"               =&gt;  "",                                                                    // Код фотогалереи &#13;
 		"BEHAVIOUR"                =&gt;  "",                                                                    // Режим работы фотогалереи &#13;
@@ -1100,7 +1100,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"               =&gt;  "",                                               // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                 =&gt;  "",                                               // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                =&gt;  "={$_REQUEST[SECTION_ID]}",                       // ID раздела &#13;
+		"SECTION_ID"                =&gt;  "={$$_REQUEST[SECTION_ID]}",                       // ID раздела &#13;
 		"SECTION_CODE"              =&gt;  "",                                               // Код раздела &#13;
 		"BEHAVIOUR"                 =&gt;  "SIMPLE",                                         // Режим работы галереи : array ( 'SIMPLE' =&gt; 'простой', 'USER' =&gt; 'многопользовательский', )&#13;
 		"PHOTO_LIST_MODE"           =&gt;  "Y",                                              // Выводить список нескольких фотографий альбома вместо отображения обложки &#13;
@@ -1152,7 +1152,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"          =&gt;  "",                                                                                      // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"            =&gt;  "",                                                                                      // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"USER_ALIAS"           =&gt;  "={$_REQUEST[USER_ALIAS]}",                                                              // Код галереи &#13;
+		"USER_ALIAS"           =&gt;  "={$$_REQUEST[USER_ALIAS]}",                                                              // Код галереи &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"INDEX_URL"            =&gt;  "index.php",                                                                             // Главная страница &#13;
@@ -1191,7 +1191,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"          =&gt;  "",                                                              // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"            =&gt;  "",                                                              // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"USER_ALIAS"           =&gt;  "={$_REQUEST[USER_ALIAS]}",                                      // Код галереи &#13;
+		"USER_ALIAS"           =&gt;  "={$$_REQUEST[USER_ALIAS]}",                                      // Код галереи &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"INDEX_URL"            =&gt;  "index.php",                                                     // Главная страница &#13;
@@ -1224,7 +1224,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"               =&gt;  "",                                                                                  // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                 =&gt;  "",                                                                                  // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"USER_ID"                   =&gt;  "={$_REQUEST[USER_ID]}",                                                             // ID пользователя &#13;
+		"USER_ID"                   =&gt;  "={$$_REQUEST[USER_ID]}",                                                             // ID пользователя &#13;
 		"SORT_BY"                   =&gt;  "UF_DATE",                                                                           // По какому полю сортируем разделы : array ( 'ID' =&gt; 'ID', 'NAME' =&gt; 'название', 'SORT' =&gt; 'индекс сортировки', 'UF_DATE' =&gt; 'дата', )&#13;
 		"SORT_ORD"                  =&gt;  "ASC",                                                                               // Порядок сортировки разделов : array ( 'ASC' =&gt; 'по возрастанию', 'DESC' =&gt; 'по убыванию', )&#13;
 		// endregion
@@ -1298,7 +1298,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"          =&gt;  "",                                                                // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"            =&gt;  "",                                                                // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"           =&gt;  "={$_REQUEST[SECTION_ID]}",                                        // ID раздела &#13;
+		"SECTION_ID"           =&gt;  "={$$_REQUEST[SECTION_ID]}",                                        // ID раздела &#13;
 		"BEHAVIOUR"            =&gt;  "SIMPLE",                                                          // Режим работы галереи : array ( 'SIMPLE' =&gt; 'простой', 'USER' =&gt; 'многопользовательский', )&#13;
 		"ELEMENT_SORT_FIELD"   =&gt;  "SORT",                                                            // Первое поле сортировки фото : array ( 'SHOW_COUNTER' =&gt; 'количество просмотров в среднем', 'SORT' =&gt; 'индекс сортировки', 'TIMESTAMP_X' =&gt; 'дата изменения', 'NAME' =&gt; 'название', 'ID' =&gt; 'ID', 'PROPERTY_RATING' =&gt; 'популярность', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'комментарии форумов', 'PROPERTY_BLOG_COMMENTS_CNT' =&gt; 'комментарии блогов', )&#13;
 		"ELEMENT_SORT_ORDER"   =&gt;  "asc",                                                             // Порядок сортировки фото : array ( 'asc' =&gt; 'по возрастанию', 'desc' =&gt; 'по убыванию', )&#13;
@@ -1335,7 +1335,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"               =&gt;  "",                                     // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                 =&gt;  "",                                     // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                =&gt;  "={$_REQUEST[SECTION_ID]}",             // ID раздела &#13;
+		"SECTION_ID"                =&gt;  "={$$_REQUEST[SECTION_ID]}",             // ID раздела &#13;
 		"SECTION_CODE"              =&gt;  "",                                     // Код раздела &#13;
 		"USER_ALIAS"                =&gt;  "",                                     // Код фотогалереи &#13;
 		"BEHAVIOUR"                 =&gt;  "",                                     // Режим работы фотогалереи &#13;
@@ -1371,11 +1371,11 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"       =&gt;  "",                                     // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"         =&gt;  "",                                     // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"        =&gt;  "={$_REQUEST[SECTION_ID]}",             // ID раздела &#13;
+		"SECTION_ID"        =&gt;  "={$$_REQUEST[SECTION_ID]}",             // ID раздела &#13;
 		"SECTION_CODE"      =&gt;  "",                                     // Код раздела &#13;
 		"USER_ALIAS"        =&gt;  "",                                     // Код фотогалереи &#13;
 		"BEHAVIOUR"         =&gt;  "",                                     // Режим работы фотогалереи &#13;
-		"ACTION"            =&gt;  "={$_REQUEST[ACTION]}",                 // Действие &#13;
+		"ACTION"            =&gt;  "={$$_REQUEST[ACTION]}",                 // Действие &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"INDEX_URL"         =&gt;  "index.php",                            // Главная страница &#13;
@@ -1411,7 +1411,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		"IBLOCK_TYPE"            =&gt;  "",                                                                    // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"              =&gt;  "",                                                                    // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
 		"BEHAVIOUR"              =&gt;  "SIMPLE",                                                              // Режим работы галереи : array ( 'SIMPLE' =&gt; 'простой', 'USER' =&gt; 'многопользовательский', )&#13;
-		"SECTION_ID"             =&gt;  "={$_REQUEST[SECTION_ID]}",                                            // ID раздела &#13;
+		"SECTION_ID"             =&gt;  "={$$_REQUEST[SECTION_ID]}",                                            // ID раздела &#13;
 		"ELEMENT_LAST_TYPE"      =&gt;  "none",                                                                // Дополнительные параметры выбора фото : array ( 'none' =&gt; 'нет', 'count' =&gt; 'выбирать несколько последних фото (ID)', 'time' =&gt; 'выбирать фото за последние несколько дней', 'period' =&gt; 'выбирать фото за период', )&#13;
 		"ELEMENT_SORT_FIELD"     =&gt;  "SORT",                                                                // Первое поле сортировки фото : array ( 'SHOW_COUNTER' =&gt; 'количество просмотров в среднем', 'SORT' =&gt; 'индекс сортировки', 'TIMESTAMP_X' =&gt; 'дата изменения', 'NAME' =&gt; 'название', 'ID' =&gt; 'ID (с возможностью сортировки)', 'PROPERTY_RATING' =&gt; 'популярность', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'комментарии форумов', 'PROPERTY_BLOG_COMMENTS_CNT' =&gt; 'комментарии блогов', )&#13;
 		"ELEMENT_SORT_ORDER"     =&gt;  "asc",                                                                 // Порядок сортировки фото : array ( 'asc' =&gt; 'по возрастанию', 'desc' =&gt; 'по убыванию', )&#13;
@@ -1465,8 +1465,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"            =&gt;  "",                                                                     // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"              =&gt;  "",                                                                     // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"             =&gt;  "={$_REQUEST[SECTION_ID]}",                                             // ID раздела &#13;
-		"ELEMENT_ID"             =&gt;  "={$_REQUEST[ELEMENT_ID]}",                                             // ID элемента &#13;
+		"SECTION_ID"             =&gt;  "={$$_REQUEST[SECTION_ID]}",                                             // ID раздела &#13;
+		"ELEMENT_ID"             =&gt;  "={$$_REQUEST[ELEMENT_ID]}",                                             // ID элемента &#13;
 		"BEHAVIOUR"              =&gt;  "SIMPLE",                                                               // Режим работы галереи : array ( 'SIMPLE' =&gt; 'простой', 'USER' =&gt; 'многопользовательский', )&#13;
 		"ELEMENT_SORT_FIELD"     =&gt;  "SORT",                                                                 // Первое поле сортировки фото : array ( 'SHOW_COUNTER' =&gt; 'количество просмотров в среднем', 'SORT' =&gt; 'индекс сортировки', 'TIMESTAMP_X' =&gt; 'дата изменения', 'NAME' =&gt; 'название', 'ID' =&gt; 'ID', 'PROPERTY_RATING' =&gt; 'популярность', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'комментарии форумов', 'PROPERTY_BLOG_COMMENTS_CNT' =&gt; 'комментарии блогов', )&#13;
 		"ELEMENT_SORT_ORDER"     =&gt;  "asc",                                                                  // Порядок сортировки фото : array ( 'asc' =&gt; 'по возрастанию', 'desc' =&gt; 'по убыванию', )&#13;
@@ -1515,7 +1515,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                 =&gt;  "",                                     // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                   =&gt;  "",                                     // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                  =&gt;  "={$_REQUEST[SECTION_ID]}",             // ID раздела &#13;
+		"SECTION_ID"                  =&gt;  "={$$_REQUEST[SECTION_ID]}",             // ID раздела &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"INDEX_URL"                   =&gt;  "index.php",                            // Индексная страница &#13;
@@ -1565,7 +1565,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"     =&gt;  "",                                                                // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"       =&gt;  "",                                                                // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"ELEMENT_ID"      =&gt;  "={$_REQUEST[ELEMENT_ID]}",                                        // ID элемента &#13;
+		"ELEMENT_ID"      =&gt;  "={$$_REQUEST[ELEMENT_ID]}",                                        // ID элемента &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"DETAIL_URL"      =&gt;  "detail.php?SECTION_ID=#SECTION_ID#&amp;ELEMENT_ID=#ELEMENT_ID#",  // Страница детального просмотра &#13;
@@ -1602,11 +1602,11 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"       =&gt;  "",                                                                // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"         =&gt;  "",                                                                // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"        =&gt;  "={$_REQUEST[SECTION_ID]}",                                        // ID раздела &#13;
-		"ELEMENT_ID"        =&gt;  "={$_REQUEST[ELEMENT_ID]}",                                        // ID элемента &#13;
+		"SECTION_ID"        =&gt;  "={$$_REQUEST[SECTION_ID]}",                                        // ID раздела &#13;
+		"ELEMENT_ID"        =&gt;  "={$$_REQUEST[ELEMENT_ID]}",                                        // ID элемента &#13;
 		"BEHAVIOUR"         =&gt;  "SIMPLE",                                                          // Режим работы галереи : array ( 'SIMPLE' =&gt; 'простой', 'USER' =&gt; 'многопользовательский', )&#13;
-		"USER_ALIAS"        =&gt;  "={$_REQUEST[USER_ALIAS]}",                                        // Код галереи &#13;
-		"ACTION"            =&gt;  "={$_REQUEST[ACTION]}",                                            // Действие над фотографией &#13;
+		"USER_ALIAS"        =&gt;  "={$$_REQUEST[USER_ALIAS]}",                                        // Код галереи &#13;
+		"ACTION"            =&gt;  "={$$_REQUEST[ACTION]}",                                            // Действие над фотографией &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"SECTION_URL"       =&gt;  "section.php?SECTION_ID=#SECTION_ID#",                             // URL страницы с содержимым раздела &#13;
@@ -1637,7 +1637,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		"IBLOCK_TYPE"               =&gt;  "",                                                                    // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                 =&gt;  "",                                                                    // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
 		"BEHAVIOUR"                 =&gt;  "SIMPLE",                                                              // Режим работы галереи : array ( 'SIMPLE' =&gt; 'простой', 'USER' =&gt; 'многопользовательский', )&#13;
-		"SECTION_ID"                =&gt;  "={$_REQUEST[SECTION_ID]}",                                            // ID раздела &#13;
+		"SECTION_ID"                =&gt;  "={$$_REQUEST[SECTION_ID]}",                                            // ID раздела &#13;
 		"ELEMENT_LAST_TYPE"         =&gt;  "none",                                                                // Дополнительные параметры выбора фото : array ( 'none' =&gt; 'нет', 'count' =&gt; 'выбирать несколько последних фото (ID)', 'time' =&gt; 'выбирать фото за последние несколько дней', 'period' =&gt; 'выбирать фото за период', )&#13;
 		"ELEMENT_SORT_FIELD"        =&gt;  "SORT",                                                                // Первое поле сортировки фото : array ( 'SHOW_COUNTER' =&gt; 'количество просмотров в среднем', 'SORT' =&gt; 'индекс сортировки', 'TIMESTAMP_X' =&gt; 'дата изменения', 'NAME' =&gt; 'название', 'ID' =&gt; 'ID', 'PROPERTY_RATING' =&gt; 'популярность', 'PROPERTY_FORUM_MESSAGE_CNT' =&gt; 'комментарии форумов', 'PROPERTY_BLOG_COMMENTS_CNT' =&gt; 'комментарии блогов', )&#13;
 		"ELEMENT_SORT_ORDER"        =&gt;  "asc",                                                                 // Порядок сортировки фото : array ( 'asc' =&gt; 'по возрастанию', 'desc' =&gt; 'по убыванию', )&#13;
@@ -1688,7 +1688,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"          =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"            =&gt;  "",                          // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"           =&gt;  "={$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
+		"SECTION_ID"           =&gt;  "={$$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
 		"SECTION_CODE"         =&gt;  "",                          // Код раздела &#13;
 		// endregion
 		// region Источник данных
@@ -1728,7 +1728,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                      =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                        =&gt;  "",                          // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                       =&gt;  "={$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
+		"SECTION_ID"                       =&gt;  "={$$_REQUEST[SECTION_ID]}",  // ID раздела &#13;
 		"SECTION_CODE"                     =&gt;  "",                          // Код раздела &#13;
 		// endregion
 		// region Источник данных
@@ -2054,7 +2054,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"   =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"     =&gt;  "",                          // Идентификатор инфоблока : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"ELEMENT_ID"    =&gt;  "={$_REQUEST[ELEMENT_ID]}",  // Идентификатор элемента инфоблока &#13;
+		"ELEMENT_ID"    =&gt;  "={$$_REQUEST[ELEMENT_ID]}",  // Идентификатор элемента инфоблока &#13;
 		"ELEMENT_CODE"  =&gt;  "",                          // Код элемента инфоблока &#13;
 		"PROP_CODE"     =&gt;  ,                        // Таблица брендов &#13;
 		// endregion
@@ -2148,9 +2148,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                 =&gt;  "",                                         // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                   =&gt;  "",                                         // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"ELEMENT_ID"                  =&gt;  "={$_REQUEST[ELEMENT_ID]}",                 // ID элемента &#13;
+		"ELEMENT_ID"                  =&gt;  "={$$_REQUEST[ELEMENT_ID]}",                 // ID элемента &#13;
 		"ELEMENT_CODE"                =&gt;  "",                                         // Код элемента &#13;
-		"SECTION_ID"                  =&gt;  "={$_REQUEST[SECTION_ID]}",                 // ID раздела &#13;
+		"SECTION_ID"                  =&gt;  "={$$_REQUEST[SECTION_ID]}",                 // ID раздела &#13;
 		"SECTION_CODE"                =&gt;  "",                                         // Код раздела &#13;
 		// endregion
 		// region Источник данных
@@ -2326,7 +2326,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE"          =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"            =&gt;  "",                          // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"           =&gt;  "={$_REQUEST[SECTION_ID]}",  // ID раздела инфоблока &#13;
+		"SECTION_ID"           =&gt;  "={$$_REQUEST[SECTION_ID]}",  // ID раздела инфоблока &#13;
 		"FILTER_NAME"          =&gt;  "arrFilter",                 // Имя выходящего массива для фильтрации &#13;
 		"HIDE_NOT_AVAILABLE"   =&gt;  "N",                         // Не отображать товары, которых нет на складах &#13;
 		// endregion
@@ -2609,7 +2609,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		"IBLOCK_TYPE"                      =&gt;  "",                                 // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                        =&gt;  "",                                 // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
 		"LINK_PROPERTY_SID"                =&gt;  "",                                 // Свойство, в котором хранится связь &#13;
-		"ELEMENT_ID"                       =&gt;  "={$_REQUEST[PARENT_ELEMENT_ID]}",  // ID элемента &#13;
+		"ELEMENT_ID"                       =&gt;  "={$$_REQUEST[PARENT_ELEMENT_ID]}",  // ID элемента &#13;
 		// endregion
 		// region Источник данных
 		"ELEMENT_SORT_FIELD"               =&gt;  "sort",                             // По какому полю сортируем элементы : array ( 'shows' =&gt; 'количество просмотров в среднем', 'sort' =&gt; 'индекс сортировки', 'timestamp_x' =&gt; 'дата изменения', 'name' =&gt; 'название', 'id' =&gt; 'ID', 'active_from' =&gt; 'дата активности (с)', 'active_to' =&gt; 'дата активности (по)', 'CATALOG_AVAILABLE' =&gt; 'доступность на складах', )&#13;
@@ -2769,8 +2769,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"              =&gt;  "lists",                                                                                                                                   // Тип инфоблока &#13;
-		"IBLOCK_ID"                   =&gt;  "={$_REQUEST[list_id]}",                                                                                                                   // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                  =&gt;  "={$_REQUEST[section_id]}",                                                                                                                // Раздел &#13;
+		"IBLOCK_ID"                   =&gt;  "={$$_REQUEST[list_id]}",                                                                                                                   // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"SECTION_ID"                  =&gt;  "={$$_REQUEST[section_id]}",                                                                                                                // Раздел &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"                   =&gt;  "lists.lists.php",                                                                                                                         // URL главной страницы списков &#13;
@@ -2806,8 +2806,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"     =&gt;  "lists",                                                             // Тип инфоблока &#13;
-		"IBLOCK_ID"          =&gt;  "={$_REQUEST[list_id]}",                                             // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"         =&gt;  "={$_REQUEST[section_id]}",                                          // Раздел &#13;
+		"IBLOCK_ID"          =&gt;  "={$$_REQUEST[list_id]}",                                             // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"SECTION_ID"         =&gt;  "={$$_REQUEST[section_id]}",                                          // Раздел &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"          =&gt;  "lists.lists.php",                                                   // URL главной страницы списков &#13;
@@ -2838,9 +2838,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"              =&gt;  "lists",                                                                                                                                   // Тип инфоблока &#13;
-		"IBLOCK_ID"                   =&gt;  "={$_REQUEST[list_id]}",                                                                                                                   // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"                  =&gt;  "={$_REQUEST[section_id]}",                                                                                                                // Раздел &#13;
-		"ELEMENT_ID"                  =&gt;  "={$_REQUEST[element_id]}",                                                                                                                // Элемент &#13;
+		"IBLOCK_ID"                   =&gt;  "={$$_REQUEST[list_id]}",                                                                                                                   // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"SECTION_ID"                  =&gt;  "={$$_REQUEST[section_id]}",                                                                                                                // Раздел &#13;
+		"ELEMENT_ID"                  =&gt;  "={$$_REQUEST[element_id]}",                                                                                                                // Элемент &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"                   =&gt;  "lists.lists.php",                                                                                                                         // URL главной страницы списков &#13;
@@ -2874,7 +2874,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"   =&gt;  "lists",                                  // Тип инфоблока &#13;
-		"IBLOCK_ID"        =&gt;  "={$_REQUEST[list_id]}",                  // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"IBLOCK_ID"        =&gt;  "={$$_REQUEST[list_id]}",                  // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"        =&gt;  "lists.lists.php",                        // URL главной страницы списков &#13;
@@ -2905,7 +2905,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"       =&gt;  "lists",                                                           // Тип инфоблока &#13;
-		"IBLOCK_ID"            =&gt;  "={$_REQUEST[list_id]}",                                           // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"IBLOCK_ID"            =&gt;  "={$$_REQUEST[list_id]}",                                           // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"            =&gt;  "lists.lists.php",                                                 // URL главной страницы списков &#13;
@@ -2937,8 +2937,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"       =&gt;  "lists",                                                           // Тип инфоблока &#13;
-		"IBLOCK_ID"            =&gt;  "={$_REQUEST[list_id]}",                                           // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"FIELD_ID"             =&gt;  "={$_REQUEST[field_id]}",                                          // Поле &#13;
+		"IBLOCK_ID"            =&gt;  "={$$_REQUEST[list_id]}",                                           // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"FIELD_ID"             =&gt;  "={$$_REQUEST[field_id]}",                                          // Поле &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"            =&gt;  "lists.lists.php",                                                 // URL главной страницы списков &#13;
@@ -2970,9 +2970,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"    =&gt;  "lists",                                                                                             // Тип инфоблока &#13;
-		"IBLOCK_ID"         =&gt;  "={$_REQUEST[list_id]}",                                                                             // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"        =&gt;  "={$_REQUEST[section_id]}",                                                                          // Раздел &#13;
-		"ELEMENT_ID"        =&gt;  "={$_REQUEST[element_id]}",                                                                          // Элемент &#13;
+		"IBLOCK_ID"         =&gt;  "={$$_REQUEST[list_id]}",                                                                             // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"SECTION_ID"        =&gt;  "={$$_REQUEST[section_id]}",                                                                          // Раздел &#13;
+		"ELEMENT_ID"        =&gt;  "={$$_REQUEST[element_id]}",                                                                          // Элемент &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"LISTS_URL"         =&gt;  "lists.lists.php",                                                                                   // URL главной страницы списков &#13;
@@ -3006,7 +3006,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Шаблоны ссылок
 		"IS_SEF"          =&gt;  "N",                                 // Включить режим совместимости с поддержкой ЧПУ &#13;
 		"LIST_URL"        =&gt;  "lists.list.php?list_id=#list_id#",  // URL списка &#13;
-		"LIST_ID"         =&gt;  "={$_REQUEST[list_id]}",             // ID списка для подсветки пункта меню &#13;
+		"LIST_ID"         =&gt;  "={$$_REQUEST[list_id]}",             // ID списка для подсветки пункта меню &#13;
 		// endregion
 		// region Настройки кеширования
 		"CACHE_TYPE"      =&gt;  "A",                                 // Тип кеширования : array ( 'A' =&gt; 'Авто + Управляемое', 'Y' =&gt; 'Кешировать', 'N' =&gt; 'Не кешировать', )&#13;
@@ -3031,11 +3031,11 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Источник данных
 		"IBLOCK_TYPE_ID"  =&gt;  "lists",                     // Тип инфоблока &#13;
-		"IBLOCK_ID"       =&gt;  "={$_REQUEST[list_id]}",     // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"SECTION_ID"      =&gt;  "={$_REQUEST[section_id]}",  // Раздел &#13;
-		"ELEMENT_ID"      =&gt;  "={$_REQUEST[element_id]}",  // Элемент &#13;
-		"FIELD_ID"        =&gt;  "={$_REQUEST[field_id]}",    // Поле &#13;
-		"FILE_ID"         =&gt;  "={$_REQUEST[file_id]}",     // Файл &#13;
+		"IBLOCK_ID"       =&gt;  "={$$_REQUEST[list_id]}",     // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
+		"SECTION_ID"      =&gt;  "={$$_REQUEST[section_id]}",  // Раздел &#13;
+		"ELEMENT_ID"      =&gt;  "={$$_REQUEST[element_id]}",  // Элемент &#13;
+		"FIELD_ID"        =&gt;  "={$$_REQUEST[field_id]}",    // Поле &#13;
+		"FILE_ID"         =&gt;  "={$$_REQUEST[file_id]}",     // Файл &#13;
 		// endregion
 
 	)&#13;
@@ -3108,8 +3108,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"BLOCK_ID"  =&gt;  "={$_REQUEST[BLOCK_ID]}",  // ID инфоблока &#13;
-		"ROW_ID"    =&gt;  "={$_REQUEST[ID]}",        // ID записи &#13;
+		"BLOCK_ID"  =&gt;  "={$$_REQUEST[BLOCK_ID]}",  // ID инфоблока &#13;
+		"ROW_ID"    =&gt;  "={$$_REQUEST[ID]}",        // ID записи &#13;
 		"LIST_URL"  =&gt;  "",                        // Путь к странице списка записей &#13;
 		// endregion
 
@@ -3220,7 +3220,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                     =&gt;  "wiki",                       // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                       =&gt;  "",                           // Код информационного блока &#13;
-		"ELEMENT_NAME"                    =&gt;  "={$_REQUEST[title]}",        // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"                    =&gt;  "={$$_REQUEST[title]}",        // Имя Wiki-страницы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"PATH_TO_USER"                    =&gt;  "",                           // Шаблон пути к странице пользователя &#13;
@@ -3275,7 +3275,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"           =&gt;  "wiki",                 // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"             =&gt;  "",                     // Код информационного блока &#13;
-		"ELEMENT_NAME"          =&gt;  "={$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"          =&gt;  "={$$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
 		"MENU_TYPE"             =&gt;  "page",                 // Тип меню : array ( 'full' =&gt; 'FULL', 'page' =&gt; 'PAGE', )&#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -3314,7 +3314,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "wiki",                 // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                  =&gt;  "",                     // Код информационного блока &#13;
-		"ELEMENT_NAME"               =&gt;  "={$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"               =&gt;  "={$$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"PATH_TO_POST_EDIT"          =&gt;  "",                     // Шаблон пути к странице редактирования Wiki-страницы &#13;
@@ -3361,7 +3361,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "wiki",                 // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                  =&gt;  "",                     // Код информационного блока &#13;
-		"ELEMENT_NAME"               =&gt;  "={$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"               =&gt;  "={$$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"PATH_TO_POST"               =&gt;  "",                     // Шаблон пути к Wiki-странице &#13;
@@ -3428,7 +3428,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "wiki",                 // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                  =&gt;  "",                     // Код информационного блока &#13;
-		"ELEMENT_NAME"               =&gt;  "={$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"               =&gt;  "={$$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
 		"HISTORY_COUNT"              =&gt;  "20",                   // Количество версий на странице &#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -3473,7 +3473,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "wiki",                         // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                  =&gt;  "",                             // Код информационного блока &#13;
-		"ELEMENT_NAME"               =&gt;  "={$_REQUEST[title]}",          // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"               =&gt;  "={$$_REQUEST[title]}",          // Имя Wiki-страницы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"PATH_TO_POST"               =&gt;  "",                             // Шаблон пути к Wiki-странице &#13;
@@ -3522,7 +3522,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "wiki",                 // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                  =&gt;  "",                     // Код информационного блока &#13;
-		"ELEMENT_NAME"               =&gt;  "={$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
+		"ELEMENT_NAME"               =&gt;  "={$$_REQUEST[title]}",  // Имя Wiki-страницы &#13;
 		"HISTORY_COUNT"              =&gt;  "20",                   // Количество версий на странице &#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -3816,8 +3816,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"     =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"       =&gt;  "",                          // Инфоблок : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"ELEMENT_ID"      =&gt;  "={$_REQUEST[ELEMENT_ID]}",  // ID элемента &#13;
-		"ELEMENT_CODE"    =&gt;  "={$_REQUEST[code]}",        // Код элемента &#13;
+		"ELEMENT_ID"      =&gt;  "={$$_REQUEST[ELEMENT_ID]}",  // ID элемента &#13;
+		"ELEMENT_CODE"    =&gt;  "={$$_REQUEST[code]}",        // Код элемента &#13;
 		// endregion
 		// region Настройки кеширования
 		"CACHE_TYPE"      =&gt;  "A",                         // Тип кеширования : array ( 'A' =&gt; 'Авто + Управляемое', 'Y' =&gt; 'Кешировать', 'N' =&gt; 'Не кешировать', )&#13;
@@ -4213,7 +4213,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"     =&gt;  "",                          // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"       =&gt;  "",                          // Идентификатор инфоблока : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"ELEMENT_ID"      =&gt;  "={$_REQUEST[ELEMENT_ID]}",  // Идентификатор товара &#13;
+		"ELEMENT_ID"      =&gt;  "={$$_REQUEST[ELEMENT_ID]}",  // Идентификатор товара &#13;
 		"ELEMENT_CODE"    =&gt;  "",                          // Код товара &#13;
 		"URL_TO_COMMENT"  =&gt;  "",                          // Путь к комментируемому товару &#13;
 		"WIDTH"           =&gt;  "",                          // Ширина &#13;
@@ -4527,8 +4527,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		"SUCCESS_URL"              =&gt;  "",                                 // Страница с сообщением об успешной отправке &#13;
 		// endregion
 		// region Источник данных
-		"WEB_FORM_ID"              =&gt;  "={$_REQUEST[WEB_FORM_ID]}",        // ID веб-формы &#13;
-		"RESULT_ID"                =&gt;  "={$_REQUEST[RESULT_ID]}",          // ID результата &#13;
+		"WEB_FORM_ID"              =&gt;  "={$$_REQUEST[WEB_FORM_ID]}",        // ID веб-формы &#13;
+		"RESULT_ID"                =&gt;  "={$$_REQUEST[RESULT_ID]}",          // ID результата &#13;
 		// endregion
 		// region Внешний вид
 		"SHOW_ANSWER_VALUE"        =&gt;  "N",                                // Показать значение параметра ANSWER_VALUE &#13;
@@ -4583,7 +4583,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
-		"WEB_FORM_ID"                   =&gt;  "={$_REQUEST[WEB_FORM_ID]}",  // ID веб-формы &#13;
+		"WEB_FORM_ID"                   =&gt;  "={$$_REQUEST[WEB_FORM_ID]}",  // ID веб-формы &#13;
 		// endregion
 		// region Внешний вид
 		"IGNORE_CUSTOM_TEMPLATE"        =&gt;  "N",                          // Игнорировать свой шаблон &#13;
@@ -4624,7 +4624,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",                   // [.default, intranet]&#13;
 	array(&#13;
 		// region Источник данных
-		"RESULT_ID"               =&gt;  "={$_REQUEST[RESULT_ID]}",  // ID результата &#13;
+		"RESULT_ID"               =&gt;  "={$$_REQUEST[RESULT_ID]}",  // ID результата &#13;
 		// endregion
 		// region Управление адресами страниц
 		"SEF_MODE"                =&gt;  "N",                        // Включить поддержку ЧПУ &#13;
@@ -4656,7 +4656,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Источник данных
-		"RESULT_ID"               =&gt;  "={$_REQUEST[RESULT_ID]}",  // ID результата &#13;
+		"RESULT_ID"               =&gt;  "={$$_REQUEST[RESULT_ID]}",  // ID результата &#13;
 		// endregion
 		// region Внешний вид
 		"IGNORE_CUSTOM_TEMPLATE"  =&gt;  "N",                        // Игнорировать свой шаблон &#13;
@@ -4692,7 +4692,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",              // [.default, intranet]&#13;
 	array(&#13;
 		// region Источник данных
-		"WEB_FORM_ID"        =&gt;  "={$_REQUEST[WEB_FORM_ID]}",  // ID веб-формы &#13;
+		"WEB_FORM_ID"        =&gt;  "={$$_REQUEST[WEB_FORM_ID]}",  // ID веб-формы &#13;
 		// endregion
 		// region Управление адресами страниц
 		"SEF_MODE"           =&gt;  "N",                          // Включить поддержку ЧПУ &#13;
@@ -4877,7 +4877,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"                          =&gt;  "={$_REQUEST[COURSE_ID]}",                    // Идентификатор курса &#13;
+		"COURSE_ID"                          =&gt;  "={$$_REQUEST[COURSE_ID]}",                    // Идентификатор курса &#13;
 		// endregion
 		// region Управление адресами страниц
 		"SEF_MODE"                           =&gt;  "N",                                          // Включить поддержку ЧПУ &#13;
@@ -4936,7 +4936,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"          =&gt;  "={$_REQUEST[COURSE_ID]}",  // Идентификатор курса &#13;
+		"COURSE_ID"          =&gt;  "={$$_REQUEST[COURSE_ID]}",  // Идентификатор курса &#13;
 		// endregion
 		// region Настройки кеширования
 		"CACHE_TYPE"         =&gt;  "A",                        // Тип кеширования : array ( 'A' =&gt; 'Авто + Управляемое', 'Y' =&gt; 'Кешировать', 'N' =&gt; 'Не кешировать', )&#13;
@@ -4964,7 +4964,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",                    // [.default, navigation]&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"                =&gt;  "={$_REQUEST[COURSE_ID]}",                                     // Идентификатор курса &#13;
+		"COURSE_ID"                =&gt;  "={$$_REQUEST[COURSE_ID]}",                                     // Идентификатор курса &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"COURSE_DETAIL_TEMPLATE"   =&gt;  "course/index.php?COURSE_ID=#COURSE_ID#",                      // URL, ведущий на страницу с детальным просмотром курса &#13;
@@ -4995,7 +4995,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"          =&gt;  "={$_REQUEST[COURSE_ID]}",  // Идентификатор курса &#13;
+		"COURSE_ID"          =&gt;  "={$$_REQUEST[COURSE_ID]}",  // Идентификатор курса &#13;
 		// endregion
 		// region Настройки кеширования
 		"CACHE_TYPE"         =&gt;  "A",                        // Тип кеширования : array ( 'A' =&gt; 'Авто + Управляемое', 'Y' =&gt; 'Кешировать', 'N' =&gt; 'Не кешировать', )&#13;
@@ -5141,7 +5141,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"TRANSCRIPT_ID"  =&gt;  "={$_REQUEST[TRANSCRIPT_ID]}",  // Идентификатор резюме (Transcript ID) &#13;
+		"TRANSCRIPT_ID"  =&gt;  "={$$_REQUEST[TRANSCRIPT_ID]}",  // Идентификатор резюме (Transcript ID) &#13;
 		// endregion
 		// region Дополнительные настройки
 		"SET_TITLE"      =&gt;  "Y",                            // Устанавливать заголовок страницы &#13;
@@ -5164,8 +5164,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"             =&gt;  "={$_REQUEST[COURSE_ID]}",             // Идентификатор курса &#13;
-		"TEST_ID"               =&gt;  "={$_REQUEST[TEST_ID]}",               // Идентификатор теста &#13;
+		"COURSE_ID"             =&gt;  "={$$_REQUEST[COURSE_ID]}",             // Идентификатор курса &#13;
+		"TEST_ID"               =&gt;  "={$$_REQUEST[TEST_ID]}",               // Идентификатор теста &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"GRADEBOOK_TEMPLATE"    =&gt;  "../gradebook.php?TEST_ID=#TEST_ID#",  // URL, ведущий на страницу с результатами тестирования &#13;
@@ -5193,8 +5193,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"          =&gt;  "={$_REQUEST[COURSE_ID]}",  // Идентификатор курса &#13;
-		"LESSON_ID"          =&gt;  "={$_REQUEST[LESSON_ID]}",  // Идентификатор урока &#13;
+		"COURSE_ID"          =&gt;  "={$$_REQUEST[COURSE_ID]}",  // Идентификатор курса &#13;
+		"LESSON_ID"          =&gt;  "={$$_REQUEST[LESSON_ID]}",  // Идентификатор урока &#13;
 		// endregion
 		// region Настройки кеширования
 		"CACHE_TYPE"         =&gt;  "A",                        // Тип кеширования : array ( 'A' =&gt; 'Авто + Управляемое', 'Y' =&gt; 'Кешировать', 'N' =&gt; 'Не кешировать', )&#13;
@@ -5222,7 +5222,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"             =&gt;  "={$_REQUEST[COURSE_ID]}",                               // Идентификатор курса &#13;
+		"COURSE_ID"             =&gt;  "={$$_REQUEST[COURSE_ID]}",                               // Идентификатор курса &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"TEST_DETAIL_TEMPLATE"  =&gt;  "test.php?COURSE_ID=#COURSE_ID#&amp;TEST_ID=#TEST_ID#",  // URL, ведущий на страницу прохождения теста &#13;
@@ -5249,8 +5249,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"                =&gt;  "={$_REQUEST[COURSE_ID]}",              // Идентификатор курса &#13;
-		"CHAPTER_ID"               =&gt;  "={$_REQUEST[CHAPTER_ID]}",             // Идентификатор главы &#13;
+		"COURSE_ID"                =&gt;  "={$$_REQUEST[COURSE_ID]}",              // Идентификатор курса &#13;
+		"CHAPTER_ID"               =&gt;  "={$$_REQUEST[CHAPTER_ID]}",             // Идентификатор главы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"CHAPTER_DETAIL_TEMPLATE"  =&gt;  "chapter.php?CHAPTER_ID=#CHAPTER_ID#",  // URL, ведущий на страницу с главой &#13;
@@ -5283,8 +5283,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"COURSE_ID"             =&gt;  "={$_REQUEST[COURSE_ID]}",                                   // Идентификатор курса &#13;
-		"LESSON_ID"             =&gt;  "={$_REQUEST[LESSON_ID]}",                                   // Идентификатор урока &#13;
+		"COURSE_ID"             =&gt;  "={$$_REQUEST[COURSE_ID]}",                                   // Идентификатор курса &#13;
+		"LESSON_ID"             =&gt;  "={$$_REQUEST[LESSON_ID]}",                                   // Идентификатор урока &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"SELF_TEST_TEMPLATE"    =&gt;  "self.php?COURSE_ID=#COURSE_ID#&amp;LESSON_ID=#LESSON_ID#",  // URL, ведущий на страницу с самотестированием &#13;
@@ -5349,7 +5349,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",             // [.default, main_page, main_page.blue, main_page.green, with_description]&#13;
 	array(&#13;
 		// region Основные параметры
-		"VOTE_ID"           =&gt;  "={$_REQUEST[VOTE_ID]}",  // Идентификатор опроса &#13;
+		"VOTE_ID"           =&gt;  "={$$_REQUEST[VOTE_ID]}",  // Идентификатор опроса &#13;
 		"VOTE_ALL_RESULTS"  =&gt;  "N",                      // Показывать все результаты &#13;
 		// endregion
 		// region Настройки кеширования
@@ -5397,7 +5397,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",                 // [.default, main_page, with_description]&#13;
 	array(&#13;
 		// region Основные параметры
-		"VOTE_ID"               =&gt;  "={$_REQUEST[VOTE_ID]}",              // Идентификатор опроса &#13;
+		"VOTE_ID"               =&gt;  "={$$_REQUEST[VOTE_ID]}",              // Идентификатор опроса &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"VOTE_RESULT_TEMPLATE"  =&gt;  "vote_result.php?VOTE_ID=#VOTE_ID#",  // Страница для вывода диаграмм результатов опроса &#13;
@@ -5636,7 +5636,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "news",              // Тип инфоблока : array ( '-' =&gt; ' ', 'catalog' =&gt; 'Каталоги', 'news' =&gt; 'Новости', 'offers' =&gt; 'Торговые предложения', 'services' =&gt; 'Сервисы', 'references' =&gt; 'Справочники', )&#13;
-		"IBLOCK_ID"                  =&gt;  "={$_REQUEST[ID]}",  // Информационный блок : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
+		"IBLOCK_ID"                  =&gt;  "={$$_REQUEST[ID]}",  // Информационный блок : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
 		"PROPERTY_FIELD_TYPE"        =&gt;  "",                  // Свойство, в котором хранится тип вопроса &#13;
 		"PROPERTY_FIELD_VALUES"      =&gt;  "",                  // Множественное свойство, в котором хранятся значения выпадающего списка &#13;
 		// endregion
@@ -5682,7 +5682,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"ID"                  =&gt;  "={$_REQUEST[ID]}",  // ID обращения &#13;
+		"ID"                  =&gt;  "={$$_REQUEST[ID]}",  // ID обращения &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"TICKET_LIST_URL"     =&gt;  "ticket_list.php",   // Страница списка обращений &#13;
@@ -5736,7 +5736,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                =&gt;  "news",              // Тип инфоблока : array ( '-' =&gt; ' ', 'catalog' =&gt; 'Каталоги', 'news' =&gt; 'Новости', 'offers' =&gt; 'Торговые предложения', 'services' =&gt; 'Сервисы', 'references' =&gt; 'Справочники', )&#13;
-		"IBLOCK_ID"                  =&gt;  "={$_REQUEST[ID]}",  // Информационный блок : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
+		"IBLOCK_ID"                  =&gt;  "={$$_REQUEST[ID]}",  // Информационный блок : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
 		"PROPERTY_FIELD_TYPE"        =&gt;  "",                  // Свойство, в котором хранится тип вопроса &#13;
 		"PROPERTY_FIELD_VALUES"      =&gt;  "",                  // Множественное свойство, в котором хранятся значения выпадающего списка &#13;
 		"BACK_URL"                   =&gt;  "ticket_list.php",   // Страница, с которой пришли на мастер (для кнопки 'Назад', может быть пустое) &#13;
@@ -7849,8 +7849,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"FID"                    =&gt;  "0",                                    // ID форума : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
-		"SOCNET_GROUP_ID"        =&gt;  "={$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
-		"USER_ID"                =&gt;  "={$_REQUEST[USER_ID]}",                // ID пользователя &#13;
+		"SOCNET_GROUP_ID"        =&gt;  "={$$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
+		"USER_ID"                =&gt;  "={$$_REQUEST[USER_ID]}",                // ID пользователя &#13;
 		"SORT_BY"                =&gt;  "LAST_POST_DATE",                       // Поле для сортировки : array ( 'TITLE' =&gt; 'Заголовок', 'USER_START_NAME' =&gt; 'Автор', 'POSTS' =&gt; 'Ответы', 'VIEWS' =&gt; 'Прочитано', 'LAST_POST_DATE' =&gt; 'Последнее сообщение', )&#13;
 		"SORT_ORDER"             =&gt;  "DESC",                                 // Направление сортировки : array ( 'ASC' =&gt; 'По возрастанию', 'DESC' =&gt; 'По убыванию', )&#13;
 		// endregion
@@ -7880,10 +7880,10 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"FID"                         =&gt;  "0",                                    // ID форума : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
-		"MID"                         =&gt;  "={$_REQUEST[MID]}",                    // ID сообщения &#13;
-		"MESSAGE_TYPE"                =&gt;  "={$_REQUEST[MESSAGE_TYPE]}",           // Действие над сообщением &#13;
-		"SOCNET_GROUP_ID"             =&gt;  "={$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
-		"USER_ID"                     =&gt;  "={$_REQUEST[USER_ID]}",                // ID пользователя &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[MID]}",                    // ID сообщения &#13;
+		"MESSAGE_TYPE"                =&gt;  "={$$_REQUEST[MESSAGE_TYPE]}",           // Действие над сообщением &#13;
+		"SOCNET_GROUP_ID"             =&gt;  "={$$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
+		"USER_ID"                     =&gt;  "={$$_REQUEST[USER_ID]}",                // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_TOPIC_LIST"    =&gt;  "topic_list.php",                       // Страница списка тем &#13;
@@ -7920,10 +7920,10 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"FID"                         =&gt;  "0",                                       // ID форума : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
-		"TID"                         =&gt;  "={$_REQUEST[TID]}",                       // ID темы &#13;
-		"MID"                         =&gt;  "={$_REQUEST[MID]}",                       // ID сообщения &#13;
-		"SOCNET_GROUP_ID"             =&gt;  "={$_REQUEST[SOCNET_GROUP_ID]}",           // ID группы &#13;
-		"USER_ID"                     =&gt;  "={$_REQUEST[USER_ID]}",                   // ID пользователя &#13;
+		"TID"                         =&gt;  "={$$_REQUEST[TID]}",                       // ID темы &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[MID]}",                       // ID сообщения &#13;
+		"SOCNET_GROUP_ID"             =&gt;  "={$$_REQUEST[SOCNET_GROUP_ID]}",           // ID группы &#13;
+		"USER_ID"                     =&gt;  "={$$_REQUEST[USER_ID]}",                   // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_TOPIC_LIST"    =&gt;  "topic_list.php",                          // Страница списка тем &#13;
@@ -7973,8 +7973,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"FID"                         =&gt;  "0",                                    // ID форума : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
 		"USE_DESC_PAGE"               =&gt;  "Y",                                    // Использовать обратную постраничную навигацию &#13;
-		"SOCNET_GROUP_ID"             =&gt;  "={$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
-		"USER_ID"                     =&gt;  "={$_REQUEST[USER_ID]}",                // ID пользователя &#13;
+		"SOCNET_GROUP_ID"             =&gt;  "={$$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
+		"USER_ID"                     =&gt;  "={$$_REQUEST[USER_ID]}",                // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_TOPIC_LIST"    =&gt;  "topic_list.php",                       // Страница списка тем &#13;
@@ -8039,13 +8039,13 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"FID"                       =&gt;  "0",                                    // ID форума : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
-		"TID"                       =&gt;  "={$_REQUEST[TID]}",                    // ID темы &#13;
-		"MID"                       =&gt;  "={$_REQUEST[MID]}",                    // ID сообщения &#13;
+		"TID"                       =&gt;  "={$$_REQUEST[TID]}",                    // ID темы &#13;
+		"MID"                       =&gt;  "={$$_REQUEST[MID]}",                    // ID сообщения &#13;
 		"PAGE_NAME"                 =&gt;  "message",                              // ID вызывающего компонента &#13;
-		"MESSAGE_TYPE"              =&gt;  "={$_REQUEST[MESSAGE_TYPE]}",           // Тип отображения формы редактирования (ответ, редактирование, новая тема) &#13;
+		"MESSAGE_TYPE"              =&gt;  "={$$_REQUEST[MESSAGE_TYPE]}",           // Тип отображения формы редактирования (ответ, редактирование, новая тема) &#13;
 		"bVarsFromForm"             =&gt;  "Y",                                    // Выбирать данные из формы &#13;
-		"SOCNET_GROUP_ID"           =&gt;  "={$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
-		"USER_ID"                   =&gt;  "={$_REQUEST[USER_ID]}",                // ID пользователя &#13;
+		"SOCNET_GROUP_ID"           =&gt;  "={$$_REQUEST[SOCNET_GROUP_ID]}",        // ID группы &#13;
+		"USER_ID"                   =&gt;  "={$$_REQUEST[USER_ID]}",                // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_MESSAGE"     =&gt;  "message.php?TID=#TID#&amp;MID=#MID#",  // Страница чтения сообщения &#13;
@@ -10206,10 +10206,10 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"MID"                         =&gt;  "={$_REQUEST[MID]}",            // ID сообщения &#13;
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",            // ID папки пользователя &#13;
-		"UID"                         =&gt;  "={$_REQUEST[UID]}",            // ID пользователя &#13;
-		"mode"                        =&gt;  "={$_REQUEST[mode]}",           // Тип сообщения &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[MID]}",            // ID сообщения &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",            // ID папки пользователя &#13;
+		"UID"                         =&gt;  "={$$_REQUEST[UID]}",            // ID пользователя &#13;
+		"mode"                        =&gt;  "={$$_REQUEST[mode]}",           // Тип сообщения &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_PM_LIST"       =&gt;  "pm_list.php?FID=#FID#",        // Страница списка персональных сообщений &#13;
@@ -10339,8 +10339,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",            // ID папки &#13;
-		"MID"                         =&gt;  "={$_REQUEST[TID]}",            // ID сообщения &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",            // ID папки &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[TID]}",            // ID сообщения &#13;
 		"PATH_TO_SMILE"               =&gt;  "/bitrix/images/forum/smile/",  // Путь относительно корня сайта к папке со смайлами &#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -10537,7 +10537,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"UID"                         =&gt;  "={$_REQUEST[UID]}",           // ID пользователя &#13;
+		"UID"                         =&gt;  "={$$_REQUEST[UID]}",           // ID пользователя &#13;
 		"SEND_MAIL"                   =&gt;  "E",                           // Могут отправлять письмо (e-mail) из профиля : array ( 'A' =&gt; 'никто', 'E' =&gt; 'авторизованные пользователи', 'U' =&gt; 'все + CAPTCHA для неавторизованных', 'Y' =&gt; 'все', )&#13;
 		"SEND_ICQ"                    =&gt;  "A",                           // Могут отправлять сообщение (icq) из профиля : array ( 'A' =&gt; 'никто', )&#13;
 		// endregion
@@ -10565,7 +10565,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"UID"                         =&gt;  "={$_REQUEST[UID]}",                                  // ID пользователя &#13;
+		"UID"                         =&gt;  "={$$_REQUEST[UID]}",                                  // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_LIST"          =&gt;  "list.php?FID=#FID#",                                 // Страница списка тем &#13;
@@ -10638,7 +10638,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"UID"                         =&gt;  "={$_REQUEST[UID]}",           // ID пользователя &#13;
+		"UID"                         =&gt;  "={$$_REQUEST[UID]}",           // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_PROFILE_VIEW"  =&gt;  "profile_view.php?UID=#UID#",  // Страница просмотра профиля &#13;
@@ -10670,7 +10670,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"UID"                         =&gt;  "={$_REQUEST[UID]}",                                  // ID пользователя &#13;
+		"UID"                         =&gt;  "={$$_REQUEST[UID]}",                                  // ID пользователя &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_READ"          =&gt;  "read.php?FID=#FID#&amp;TID=#TID#",                   // Страница чтения темы &#13;
@@ -10720,7 +10720,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"UID"                         =&gt;  "={$_REQUEST[UID]}",                                  // ID пользователя форума &#13;
+		"UID"                         =&gt;  "={$$_REQUEST[UID]}",                                  // ID пользователя форума &#13;
 		"mode"                        =&gt;  "all",                                                // Режим отображения : array ( 'all' =&gt; 'все сообщения автора', 'lt' =&gt; 'участвовал в темах', 'lta' =&gt; 'автор тем', )&#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -10855,9 +10855,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                               // ID форума &#13;
-		"TID"                         =&gt;  "={$_REQUEST[TID]}",                               // ID темы &#13;
-		"MID"                         =&gt;  "={$_REQUEST[MID]}",                               // ID сообщения &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                               // ID форума &#13;
+		"TID"                         =&gt;  "={$$_REQUEST[TID]}",                               // ID темы &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[MID]}",                               // ID сообщения &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_INDEX"         =&gt;  "index.php",                                       // Страница списка форумов &#13;
@@ -10898,8 +10898,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                                  // ID форума &#13;
-		"TID"                         =&gt;  "={$_REQUEST[TID]}",                                  // ID темы &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                                  // ID форума &#13;
+		"TID"                         =&gt;  "={$$_REQUEST[TID]}",                                  // ID темы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_INDEX"         =&gt;  "index.php",                                          // Страница списка форумов &#13;
@@ -10946,9 +10946,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                  // ID форума &#13;
-		"TID"                         =&gt;  "={$_REQUEST[TID]}",                  // ID темы &#13;
-		"TITLE_SEO"                   =&gt;  "={$_REQUEST[TITLE_SEO]}",            // SEO ID темы &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                  // ID форума &#13;
+		"TID"                         =&gt;  "={$$_REQUEST[TID]}",                  // ID темы &#13;
+		"TITLE_SEO"                   =&gt;  "={$$_REQUEST[TITLE_SEO]}",            // SEO ID темы &#13;
 		"PERIOD"                      =&gt;  "600",                                // Период для отображения статистики (мин.) &#13;
 		"SHOW"                        =&gt;  array ( 0 =&gt; USERS_ONLINE, ),  // Отображать в статистике : array ( 'STATISTIC' =&gt; 'статистику форумов', 'BIRTHDAY' =&gt; 'именинников', 'USERS_ONLINE' =&gt; 'он-лайн пользователей', )&#13;
 		// endregion
@@ -10984,7 +10984,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		"FORUM_ID"                    =&gt;  "1",                            // ID форума для отзывов : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
 		"IBLOCK_TYPE"                 =&gt;  "catalog",                      // Тип информационного блока (используется только для проверки) : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"                   =&gt;  "1",                            // Код информационного блока : array ( 1 =&gt; '[1] Новости', 2 =&gt; '[2] Одежда', 3 =&gt; '[3] Одежда (предложения)', )&#13;
-		"ELEMENT_ID"                  =&gt;  "={$_REQUEST[ELEMENT_ID]}",     // ID элемента &#13;
+		"ELEMENT_ID"                  =&gt;  "={$$_REQUEST[ELEMENT_ID]}",     // ID элемента &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_READ"          =&gt;  "",                             // Страница чтения темы форума &#13;
@@ -11027,9 +11027,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                                  // ID форума &#13;
-		"MID"                         =&gt;  "={$_REQUEST[MID]}",                                  // ID сообщения &#13;
-		"MESSAGE_TYPE"                =&gt;  "={$_REQUEST[MESSAGE_TYPE]}",                         // Действие над сообщением &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                                  // ID форума &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[MID]}",                                  // ID сообщения &#13;
+		"MESSAGE_TYPE"                =&gt;  "={$$_REQUEST[MESSAGE_TYPE]}",                         // Действие над сообщением &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_INDEX"         =&gt;  "index.php",                                          // Страница списка форумов &#13;
@@ -11069,9 +11069,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                                                   // ID форума &#13;
-		"TID"                         =&gt;  "={$_REQUEST[TID]}",                                                   // ID темы &#13;
-		"MID"                         =&gt;  "={$_REQUEST[MID]}",                                                   // ID сообщения &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                                                   // ID форума &#13;
+		"TID"                         =&gt;  "={$$_REQUEST[TID]}",                                                   // ID темы &#13;
+		"MID"                         =&gt;  "={$$_REQUEST[MID]}",                                                   // ID сообщения &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_READ"          =&gt;  "read.php?FID=#FID#&amp;TID=#TID#",                                    // Страница чтения темы &#13;
@@ -11131,7 +11131,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                                  // ID форума &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                                  // ID форума &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_INDEX"         =&gt;  "index.php",                                          // Страница списка форумов &#13;
@@ -11176,8 +11176,8 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                                  // ID форума &#13;
-		"TID"                         =&gt;  "={$_REQUEST[TID]}",                                  // ID темы &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                                  // ID форума &#13;
+		"TID"                         =&gt;  "={$$_REQUEST[TID]}",                                  // ID темы &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_INDEX"         =&gt;  "index.php",                                          // Страница списка форумов &#13;
@@ -11286,7 +11286,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                         =&gt;  "={$_REQUEST[FID]}",                                  // ID форума &#13;
+		"FID"                         =&gt;  "={$$_REQUEST[FID]}",                                  // ID форума &#13;
 		"USE_DESC_PAGE"               =&gt;  "Y",                                                  // Использовать обратную постраничную навигацию &#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -11336,11 +11336,11 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	".default",&#13;
 	array(&#13;
 		// region Основные параметры
-		"FID"                    =&gt;  "={$_REQUEST[FID]}",                                  // ID форума &#13;
-		"TID"                    =&gt;  "={$_REQUEST[TID]}",                                  // ID темы &#13;
-		"MID"                    =&gt;  "={$_REQUEST[MID]}",                                  // ID сообщения &#13;
+		"FID"                    =&gt;  "={$$_REQUEST[FID]}",                                  // ID форума &#13;
+		"TID"                    =&gt;  "={$$_REQUEST[TID]}",                                  // ID темы &#13;
+		"MID"                    =&gt;  "={$$_REQUEST[MID]}",                                  // ID сообщения &#13;
 		"PAGE_NAME"              =&gt;  "message",                                            // ID вызывающего компонента &#13;
-		"MESSAGE_TYPE"           =&gt;  "={$_REQUEST[MESSAGE_TYPE]}",                         // Тип отображения формы редактирования (ответ, редактирование, новая тема) &#13;
+		"MESSAGE_TYPE"           =&gt;  "={$$_REQUEST[MESSAGE_TYPE]}",                         // Тип отображения формы редактирования (ответ, редактирование, новая тема) &#13;
 		"EDITOR_CODE_DEFAULT"    =&gt;  "N",                                                  // По умолчанию показывать невизуальный режим редактора &#13;
 		// endregion
 		// region Шаблоны ссылок
@@ -11377,7 +11377,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"USE_DESC_PAGE"               =&gt;  "Y",                                                  // Использовать обратную постраничную навигацию &#13;
-		"GID"                         =&gt;  "={$_REQUEST[GID]}",                                  // ID группы форумов &#13;
+		"GID"                         =&gt;  "={$$_REQUEST[GID]}",                                  // ID группы форумов &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_FORUMS"        =&gt;  "forums.php?GID=#GID#",                               // Страница просмотра форумов группы &#13;
@@ -11443,9 +11443,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		// region Основные параметры
 		"TYPE_RANGE"                  =&gt;  array ( 0 =&gt; RSS1, 1 =&gt; RSS2, 2 =&gt; ATOM, ),  // Формат RSS : array ( 'RSS1' =&gt; 'RSS 0.92', 'RSS2' =&gt; 'RSS 2.0', 'ATOM' =&gt; 'Atom 0.3', )&#13;
 		"FID_RANGE"                   =&gt;  ,                                                         // Разрешить RSS на форумах : array ( 1 =&gt; 'Отзывы о товарах', )&#13;
-		"IID"                         =&gt;  "={$_REQUEST[IID]}",                                          // ID &#13;
+		"IID"                         =&gt;  "={$$_REQUEST[IID]}",                                          // ID &#13;
 		"MODE"                        =&gt;  "Array",                                                           // Вид компонента : array ( 'link' =&gt; 'Ссылка', 'forum' =&gt; 'Данные форума', 'topic' =&gt; 'Данные темы', )&#13;
-		"TYPE"                        =&gt;  "={$_REQUEST[TYPE]}",                                         // Тип RSS &#13;
+		"TYPE"                        =&gt;  "={$$_REQUEST[TYPE]}",                                         // Тип RSS &#13;
 		// endregion
 		// region Шаблоны ссылок
 		"URL_TEMPLATES_RSS"           =&gt;  "rss.php?TYPE=#TYPE#&amp;MODE=#MODE#&amp;IID=#IID#",          // Страница RSS &#13;
@@ -11545,7 +11545,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 		"AGREEMENT_TEXT_FILE"  =&gt;  "/bitrix/components/bitrix/sale.affiliate.register/agreement-s1.htm",  // Путь к файлу с пользовательским соглашением &#13;
 		// endregion
 		// region Дополнительные настройки
-		"REDIRECT_PAGE"        =&gt;  "={$_REQUEST[REDIRECT_PAGE]}",                                         // Страница для перехода после регистрации &#13;
+		"REDIRECT_PAGE"        =&gt;  "={$$_REQUEST[REDIRECT_PAGE]}",                                         // Страница для перехода после регистрации &#13;
 		"SET_TITLE"            =&gt;  "Y",                                                                   // Устанавливать заголовок страницы &#13;
 		// endregion
 
@@ -12393,9 +12393,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                 =&gt;  "catalog",                     // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
-		"IBLOCK_ID"                   =&gt;  "={$_REQUEST[IBLOCK_ID]}",     // Идентификатор инфоблока товара : array ( 1 =&gt; '[news] Новости', 2 =&gt; '[clothes] Одежда', 3 =&gt; '[clothes_offers] Одежда (предложения)', )&#13;
-		"ID"                          =&gt;  "={$_REQUEST[PRODUCT_ID]}",    // Идентификатор товара &#13;
-		"CODE"                        =&gt;  "={$_REQUEST[PRODUCT_CODE]}",  // Код товара &#13;
+		"IBLOCK_ID"                   =&gt;  "={$$_REQUEST[IBLOCK_ID]}",     // Идентификатор инфоблока товара : array ( 1 =&gt; '[news] Новости', 2 =&gt; '[clothes] Одежда', 3 =&gt; '[clothes_offers] Одежда (предложения)', )&#13;
+		"ID"                          =&gt;  "={$$_REQUEST[PRODUCT_ID]}",    // Идентификатор товара &#13;
+		"CODE"                        =&gt;  "={$$_REQUEST[PRODUCT_CODE]}",  // Код товара &#13;
 		"PROPERTY_LINK"               =&gt;  "RECOMMEND",                   // Свойство привязки &#13;
 		"OFFERS_PROPERTY_LINK"        =&gt;  "RECOMMEND",                   // Свойство привязки для торговых предложений &#13;
 		// endregion
@@ -12550,9 +12550,9 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IBLOCK_TYPE"                 =&gt;  "catalog",                     // Тип инфоблока : array ( 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
-		"IBLOCK_ID"                   =&gt;  "={$_REQUEST[IBLOCK_ID]}",     // Код информационного блока : array ( 1 =&gt; '[news] Новости', 2 =&gt; '[clothes] Одежда', 3 =&gt; '[clothes_offers] Одежда (предложения)', )&#13;
-		"ID"                          =&gt;  "={$_REQUEST[PRODUCT_ID]}",    // Идентификатор товара &#13;
-		"CODE"                        =&gt;  "={$_REQUEST[PRODUCT_CODE]}",  // Код товара &#13;
+		"IBLOCK_ID"                   =&gt;  "={$$_REQUEST[IBLOCK_ID]}",     // Код информационного блока : array ( 1 =&gt; '[news] Новости', 2 =&gt; '[clothes] Одежда', 3 =&gt; '[clothes_offers] Одежда (предложения)', )&#13;
+		"ID"                          =&gt;  "={$$_REQUEST[PRODUCT_ID]}",    // Идентификатор товара &#13;
+		"CODE"                        =&gt;  "={$$_REQUEST[PRODUCT_CODE]}",  // Код товара &#13;
 		"MIN_BUYES"                   =&gt;  "1",                           // Минимальное количество покупок товара &#13;
 		// endregion
 		// region Источник данных
@@ -12920,7 +12920,7 @@ $$APPLICATION-&gt;IncludeComponent(&#13;
 	array(&#13;
 		// region Основные параметры
 		"IS_SEF"       =&gt;  "N",                 // Включить режим совместимости с поддержкой ЧПУ &#13;
-		"ID"           =&gt;  "={$_REQUEST[ID]}",  // ID элемента для подсветки пункта меню &#13;
+		"ID"           =&gt;  "={$$_REQUEST[ID]}",  // ID элемента для подсветки пункта меню &#13;
 		"IBLOCK_TYPE"  =&gt;  "catalog",           // Тип информационного блока : array ( 'all' =&gt; ' ', 'catalog' =&gt; '[catalog] Каталоги', 'news' =&gt; '[news] Новости', 'offers' =&gt; '[offers] Торговые предложения', 'services' =&gt; '[services] Сервисы', 'references' =&gt; '[references] Справочники', )&#13;
 		"IBLOCK_ID"    =&gt;  "1",                 // Код информационного блока : array ( 1 =&gt; 'Новости', 2 =&gt; 'Одежда', 3 =&gt; 'Одежда (предложения)', )&#13;
 		"SECTION_URL"  =&gt;  "",                  // URL, ведущий на страницу с содержимым раздела &#13;
